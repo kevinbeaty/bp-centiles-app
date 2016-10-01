@@ -20,13 +20,13 @@ if (!BPC) {
     * Document ready event handler (jQuery style)
     */
     $(document).ready(function() {
-        FHIR.oauth2.ready(function(smart){
-            window.smart = smart;
+        //FHIR.oauth2.ready(function(smart){
+        //window.smart = smart;
             
             if ( typeof FHIR === "undefined" ) {
                 $("#info").text("Error: SMART Connect interface not found");
             } else {
-                var hidePatientHeader = (smart.tokenResponse.need_patient_banner === false);
+                var hidePatientHeader = true;//(smart.tokenResponse.need_patient_banner === false);
                 BPC.settings.hide_patient_header = hidePatientHeader;
             
                 // Fire up the SMART API calls and initialize the application asynchronously
@@ -43,10 +43,10 @@ if (!BPC) {
             
             // Add other things to do upon document loading here...
             
-        },
-        function () {
-            BPC.initApp ( BPC.getSamplePatient(), true );
-        }); // end document.ready handler
+        //}
+        //function () {
+        //    BPC.initApp ( BPC.getSamplePatient(), true );
+        //}); // end document.ready handler
     });
     
     /**

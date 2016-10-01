@@ -1,0 +1,222 @@
+{
+  "resourceType": "Bundle",
+  "type": "searchset",
+  "total": 3,
+  "link": [
+    {
+      "relation": "self",
+      "url": "https://stub-dstu2.smarthealthit.org/api/fhir/Patient?name=&_count=10&_skip=0&_sort%3Aasc=family&_sort%3Adesc=&_format=json&_id=99912345%2C9995679%2C1551992"
+    }
+  ],
+  "entry": [
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Patient/9995679",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "9995679",
+        "meta": {
+          "versionId": "193966",
+          "lastUpdated": "2016-03-09T15:35:38.628+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>\n        \n            <p>Aaron Alexis</p>\n      \n          </div>"
+        },
+        "identifier": [
+          {
+            "use": "usual",
+            "type": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/v2/0203",
+                  "code": "MR",
+                  "display": "Medical record number"
+                }
+              ],
+              "text": "Medical record number"
+            },
+            "system": "http://hospital.smarthealthit.org",
+            "value": "9995679"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "use": "official",
+            "family": [
+              "Alexis"
+            ],
+            "given": [
+              "Aaron"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1989-10-26",
+        "address": [
+          {
+            "use": "home",
+            "postalCode": "02155",
+            "country": "USA"
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Patient/1551992",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "1551992",
+        "meta": {
+          "versionId": "32445",
+          "lastUpdated": "2016-03-09T15:31:12.818+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>\n        \n            <p>Lisa Coleman</p>\n      \n          </div>"
+        },
+        "identifier": [
+          {
+            "use": "usual",
+            "type": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/v2/0203",
+                  "code": "MR",
+                  "display": "Medical record number"
+                }
+              ],
+              "text": "Medical record number"
+            },
+            "system": "http://hospital.smarthealthit.org",
+            "value": "1551992"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "use": "official",
+            "family": [
+              "Coleman"
+            ],
+            "given": [
+              "Lisa",
+              "P."
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "800-258-4431",
+            "use": "home"
+          },
+          {
+            "system": "email",
+            "value": "lisa.coleman@example.com"
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1948-04-14",
+        "address": [
+          {
+            "use": "home",
+            "line": [
+              "1 Main StApt 16"
+            ],
+            "city": "Bixby",
+            "state": "OK",
+            "postalCode": "74008",
+            "country": "USA"
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Patient/99912345",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "99912345",
+        "meta": {
+          "versionId": "191610",
+          "lastUpdated": "2016-03-09T15:35:31.839+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>\n        \n            <p>Allen Vitalis</p>\n      \n          </div>"
+        },
+        "identifier": [
+          {
+            "use": "usual",
+            "type": {
+              "coding": [
+                {
+                  "system": "http://hl7.org/fhir/v2/0203",
+                  "code": "MR",
+                  "display": "Medical record number"
+                }
+              ],
+              "text": "Medical record number"
+            },
+            "system": "http://hospital.smarthealthit.org",
+            "value": "99912345"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "use": "official",
+            "family": [
+              "Vitalis"
+            ],
+            "given": [
+              "Allen"
+            ]
+          }
+        ],
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "800-834-9386",
+            "use": "home"
+          },
+          {
+            "system": "email",
+            "value": "allen.vitalis@example.com"
+          }
+        ],
+        "gender": "male",
+        "birthDate": "2004-04-07",
+        "address": [
+          {
+            "use": "home",
+            "line": [
+              "17 Oak Rd"
+            ],
+            "city": "Belmont",
+            "state": "MA",
+            "postalCode": "02478",
+            "country": "USA"
+          }
+        ],
+        "photo": [
+          {
+            "contentType": "image/jpeg",
+            "url": "/Binary/4-photo",
+            "hash": "40d72d76e60ef31b15137db1a87a0e9a72a4e58e",
+            "title": "Head photograph of the patient"
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    }
+  ]
+}

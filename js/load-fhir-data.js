@@ -4,7 +4,17 @@
   FhirLoader.demographics = function() {
     var dfd = $.Deferred();
 
-    smart.patient.read().done(function(pt) {
+    setTimeout(function(){
+      var name = 'Aaron Alexis'
+      var birthday = new Date('1977-02-14' ).toISOString();
+      var gender ='male';
+      dfd.resolve({
+        name: name,
+        gender: gender,
+        birthday: birthday
+      });
+    }, 10)
+    /*smart.patient.read().done(function(pt) {
       var name = pt.name[0].given.join(" ") +" "+ pt.name[0].family.join(" ");
       var birthday = new Date(pt.birthDate).toISOString();
       var gender = pt.gender;
@@ -18,15 +28,26 @@
     }).fail(function(e) {
       dfd.reject(e.message || e);
     });
+    */
 
     return dfd.promise();
   };
 
   FhirLoader.vitals = function() {
     var dfd = $.Deferred();
-    $.when(getObservations(),getEncounters()).then(function(observations,encounters) {
+    getEncounters().then(function(encs){
+      var encounters = extractEntries(encs)
+      getObservations().then(function(obs){
+      var observations = extractEntries(obs)
+        dfd.resolve(processObservations(observations,encounters));
+      })
+    })
+    /*
+    $.when(getObservations(),getEncounters()).done(function(observations,encounters) {
+    $.when(getObservations(),getEncounters()).done(function(observations,encounters) {
         dfd.resolve(processObservations(observations,encounters));
     });
+    */
     return dfd.promise();
   }
   
@@ -44,7 +65,6 @@
 
 
   function processObservations(observations, encounters){
-
     var vitals = {heightData: [], bpData: []};
 
     var vitalsByCode = smart.byCode(observations, 'code');
@@ -115,7 +135,8 @@
   };
 
   function getObservations(){
-        return smart.patient.api.fetchAll({type: "Observation", query: {code: {$or: ['http://loinc.org|8302-2','http://loinc.org|55284-4']}}});
+    return getFixtureJSON('observations')
+        //return smart.patient.api.fetchAll({type: "Observation", query: {code: {$or: ['http://loinc.org|8302-2','http://loinc.org|55284-4']}}});
         
   };
 
@@ -131,9 +152,58 @@
       );
       return deferred.promise();
   };
+
+  function getFixtureJSON(fixture) {
+    return $.getJSON('/fixtures/'+fixture+'.json')
+  };
+
+  function extractEntries(obs){
+    var result = obs.entry.map(function(ob){
+      return ob.resource
+    })
+    return result
+  }
   
   function getEncounters(){
-        return defaultOnFail(smart.patient.api.fetchAll({type: "Encounter"}),[]);
+    return getFixtureJSON('encounters')
+    //  return defaultOnFail(smart.patient.api.fetchAll({type: "Encounter"}),[]);
   };
+
+  var smart = window.smart || (window.smart = {})
+	smart.byCode = function byCode(observations, property){
+		var ret = {};
+		if (!Array.isArray(observations)){
+			observations = [observations];
+		}
+		observations.forEach(function(o){
+			if (o.resourceType === "Observation") {
+					o[property].coding.forEach(function(coding){
+						ret[coding.code] = ret[coding.code] || [];
+						ret[coding.code].push(o);
+					});
+			}
+		});
+		return ret;
+	};
+  smart.units = {
+		cm: function(pq){
+			if(pq.code == "cm") return pq.value;
+			if(pq.code == "m") return 100*pq.value;
+			if(pq.code == "in") return 2.54*pq.value;
+			if(pq.code == "[in_us]") return 2.54*pq.value;
+			if(pq.code == "[in_i]") return 2.54*pq.value;
+			throw "Unrecognized length unit: " + pq.code
+		},
+		kg: function(pq){
+			if(pq.code == "kg") return pq.value;
+			if(pq.code == "g") return pq.value / 1000;
+			if(pq.code.match(/lb/)) return pq.value / 2.20462;
+			if(pq.code.match(/oz/)) return pq.value / 35.274;
+			throw "Unrecognized weight unit: " + pq.code
+		},
+		any: function(pq){
+			return pq.value
+		}
+	}
 
 })();

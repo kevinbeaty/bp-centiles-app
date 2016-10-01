@@ -1,0 +1,3609 @@
+{
+  "resourceType": "Bundle",
+  "type": "searchset",
+  "total": 62,
+  "link": [
+    {
+      "relation": "self",
+      "url": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation?code=8302-2%2C55284-4&patient=1551992&patient=1551992"
+    },
+    {
+      "relation": "next",
+      "url": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation?code=8302-2%2C55284-4&patient=1551992&patient=1551992&_count=50&_skip=50"
+    }
+  ],
+  "entry": [
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/69-bp",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "69-bp",
+        "meta": {
+          "versionId": "32651",
+          "lastUpdated": "2016-03-09T15:31:13.177+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>1998-08-06: Blood pressure 98/75 mmHg</div>"
+        },
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood pressure systolic and diastolic"
+            }
+          ],
+          "text": "Blood pressure systolic and diastolic"
+        },
+        "subject": {
+          "reference": "Patient/1551992"
+        },
+        "encounter": {
+          "reference": "Encounter/69"
+        },
+        "effectiveDateTime": "1998-08-06",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ],
+              "text": "Systolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 98,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ],
+              "text": "Diastolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 75,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/70-bp",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "70-bp",
+        "meta": {
+          "versionId": "32691",
+          "lastUpdated": "2016-03-09T15:31:13.228+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>1998-08-07: Blood pressure 106/66 mmHg</div>"
+        },
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood pressure systolic and diastolic"
+            }
+          ],
+          "text": "Blood pressure systolic and diastolic"
+        },
+        "subject": {
+          "reference": "Patient/1551992"
+        },
+        "encounter": {
+          "reference": "Encounter/70"
+        },
+        "effectiveDateTime": "1998-08-07",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ],
+              "text": "Systolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 106,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ],
+              "text": "Diastolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 66,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/71-bp",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "71-bp",
+        "meta": {
+          "versionId": "32731",
+          "lastUpdated": "2016-03-09T15:31:13.280+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2000-02-22: Blood pressure 88/54 mmHg</div>"
+        },
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood pressure systolic and diastolic"
+            }
+          ],
+          "text": "Blood pressure systolic and diastolic"
+        },
+        "subject": {
+          "reference": "Patient/1551992"
+        },
+        "encounter": {
+          "reference": "Encounter/71"
+        },
+        "effectiveDateTime": "2000-02-22",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ],
+              "text": "Systolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 88,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ],
+              "text": "Diastolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 54,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/72-bp",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "72-bp",
+        "meta": {
+          "versionId": "32771",
+          "lastUpdated": "2016-03-09T15:31:13.334+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2000-02-24: Blood pressure 89/55 mmHg</div>"
+        },
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood pressure systolic and diastolic"
+            }
+          ],
+          "text": "Blood pressure systolic and diastolic"
+        },
+        "subject": {
+          "reference": "Patient/1551992"
+        },
+        "encounter": {
+          "reference": "Encounter/72"
+        },
+        "effectiveDateTime": "2000-02-24",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ],
+              "text": "Systolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 89,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ],
+              "text": "Diastolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 55,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/73-bp",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "73-bp",
+        "meta": {
+          "versionId": "32811",
+          "lastUpdated": "2016-03-09T15:31:13.391+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2000-02-25: Blood pressure 128/80 mmHg</div>"
+        },
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood pressure systolic and diastolic"
+            }
+          ],
+          "text": "Blood pressure systolic and diastolic"
+        },
+        "subject": {
+          "reference": "Patient/1551992"
+        },
+        "encounter": {
+          "reference": "Encounter/73"
+        },
+        "effectiveDateTime": "2000-02-25",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ],
+              "text": "Systolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 128,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ],
+              "text": "Diastolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 80,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/74-bp",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "74-bp",
+        "meta": {
+          "versionId": "32851",
+          "lastUpdated": "2016-03-09T15:31:13.464+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2000-04-06: Blood pressure 115/71 mmHg</div>"
+        },
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood pressure systolic and diastolic"
+            }
+          ],
+          "text": "Blood pressure systolic and diastolic"
+        },
+        "subject": {
+          "reference": "Patient/1551992"
+        },
+        "encounter": {
+          "reference": "Encounter/74"
+        },
+        "effectiveDateTime": "2000-04-06",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ],
+              "text": "Systolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 115,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ],
+              "text": "Diastolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 71,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/75-bp",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "75-bp",
+        "meta": {
+          "versionId": "32891",
+          "lastUpdated": "2016-03-09T15:31:13.520+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2000-04-07: Blood pressure 67/41 mmHg</div>"
+        },
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood pressure systolic and diastolic"
+            }
+          ],
+          "text": "Blood pressure systolic and diastolic"
+        },
+        "subject": {
+          "reference": "Patient/1551992"
+        },
+        "encounter": {
+          "reference": "Encounter/75"
+        },
+        "effectiveDateTime": "2000-04-07",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ],
+              "text": "Systolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 67,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ],
+              "text": "Diastolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 41,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/76-bp",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "76-bp",
+        "meta": {
+          "versionId": "32931",
+          "lastUpdated": "2016-03-09T15:31:13.581+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2000-05-15: Blood pressure 87/53 mmHg</div>"
+        },
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood pressure systolic and diastolic"
+            }
+          ],
+          "text": "Blood pressure systolic and diastolic"
+        },
+        "subject": {
+          "reference": "Patient/1551992"
+        },
+        "encounter": {
+          "reference": "Encounter/76"
+        },
+        "effectiveDateTime": "2000-05-15",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ],
+              "text": "Systolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 87,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ],
+              "text": "Diastolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 53,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/77-bp",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "77-bp",
+        "meta": {
+          "versionId": "32971",
+          "lastUpdated": "2016-03-09T15:31:13.633+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2000-05-16: Blood pressure 84/52 mmHg</div>"
+        },
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood pressure systolic and diastolic"
+            }
+          ],
+          "text": "Blood pressure systolic and diastolic"
+        },
+        "subject": {
+          "reference": "Patient/1551992"
+        },
+        "encounter": {
+          "reference": "Encounter/77"
+        },
+        "effectiveDateTime": "2000-05-16",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ],
+              "text": "Systolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 84,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ],
+              "text": "Diastolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 52,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/78-bp",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "78-bp",
+        "meta": {
+          "versionId": "33011",
+          "lastUpdated": "2016-03-09T15:31:13.688+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2000-05-17: Blood pressure 85/53 mmHg</div>"
+        },
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood pressure systolic and diastolic"
+            }
+          ],
+          "text": "Blood pressure systolic and diastolic"
+        },
+        "subject": {
+          "reference": "Patient/1551992"
+        },
+        "encounter": {
+          "reference": "Encounter/78"
+        },
+        "effectiveDateTime": "2000-05-17",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ],
+              "text": "Systolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 85,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ],
+              "text": "Diastolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 53,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/79-bp",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "79-bp",
+        "meta": {
+          "versionId": "33051",
+          "lastUpdated": "2016-03-09T15:31:13.740+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2000-05-19: Blood pressure 69/42 mmHg</div>"
+        },
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood pressure systolic and diastolic"
+            }
+          ],
+          "text": "Blood pressure systolic and diastolic"
+        },
+        "subject": {
+          "reference": "Patient/1551992"
+        },
+        "encounter": {
+          "reference": "Encounter/79"
+        },
+        "effectiveDateTime": "2000-05-19",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ],
+              "text": "Systolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 69,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ],
+              "text": "Diastolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 42,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/80-bp",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "80-bp",
+        "meta": {
+          "versionId": "33091",
+          "lastUpdated": "2016-03-09T15:31:13.792+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2000-05-22: Blood pressure 103/64 mmHg</div>"
+        },
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood pressure systolic and diastolic"
+            }
+          ],
+          "text": "Blood pressure systolic and diastolic"
+        },
+        "subject": {
+          "reference": "Patient/1551992"
+        },
+        "encounter": {
+          "reference": "Encounter/80"
+        },
+        "effectiveDateTime": "2000-05-22",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ],
+              "text": "Systolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 103,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ],
+              "text": "Diastolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 64,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/81-bp",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "81-bp",
+        "meta": {
+          "versionId": "33131",
+          "lastUpdated": "2016-03-09T15:31:13.844+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2000-06-08: Blood pressure 119/74 mmHg</div>"
+        },
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood pressure systolic and diastolic"
+            }
+          ],
+          "text": "Blood pressure systolic and diastolic"
+        },
+        "subject": {
+          "reference": "Patient/1551992"
+        },
+        "encounter": {
+          "reference": "Encounter/81"
+        },
+        "effectiveDateTime": "2000-06-08",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ],
+              "text": "Systolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 119,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ],
+              "text": "Diastolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 74,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/82-bp",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "82-bp",
+        "meta": {
+          "versionId": "33171",
+          "lastUpdated": "2016-03-09T15:31:13.897+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2000-06-12: Blood pressure 124/77 mmHg</div>"
+        },
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood pressure systolic and diastolic"
+            }
+          ],
+          "text": "Blood pressure systolic and diastolic"
+        },
+        "subject": {
+          "reference": "Patient/1551992"
+        },
+        "encounter": {
+          "reference": "Encounter/82"
+        },
+        "effectiveDateTime": "2000-06-12",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ],
+              "text": "Systolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 124,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ],
+              "text": "Diastolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 77,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/83-bp",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "83-bp",
+        "meta": {
+          "versionId": "33211",
+          "lastUpdated": "2016-03-09T15:31:13.949+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2000-06-25: Blood pressure 74/45 mmHg</div>"
+        },
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood pressure systolic and diastolic"
+            }
+          ],
+          "text": "Blood pressure systolic and diastolic"
+        },
+        "subject": {
+          "reference": "Patient/1551992"
+        },
+        "encounter": {
+          "reference": "Encounter/83"
+        },
+        "effectiveDateTime": "2000-06-25",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ],
+              "text": "Systolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 74,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ],
+              "text": "Diastolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 45,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/84-bp",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "84-bp",
+        "meta": {
+          "versionId": "33251",
+          "lastUpdated": "2016-03-09T15:31:14.001+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2003-03-04: Blood pressure 125/77 mmHg</div>"
+        },
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood pressure systolic and diastolic"
+            }
+          ],
+          "text": "Blood pressure systolic and diastolic"
+        },
+        "subject": {
+          "reference": "Patient/1551992"
+        },
+        "encounter": {
+          "reference": "Encounter/84"
+        },
+        "effectiveDateTime": "2003-03-04",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ],
+              "text": "Systolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 125,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ],
+              "text": "Diastolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 77,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/85-bp",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "85-bp",
+        "meta": {
+          "versionId": "33291",
+          "lastUpdated": "2016-03-09T15:31:14.054+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2003-03-05: Blood pressure 77/47 mmHg</div>"
+        },
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood pressure systolic and diastolic"
+            }
+          ],
+          "text": "Blood pressure systolic and diastolic"
+        },
+        "subject": {
+          "reference": "Patient/1551992"
+        },
+        "encounter": {
+          "reference": "Encounter/85"
+        },
+        "effectiveDateTime": "2003-03-05",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ],
+              "text": "Systolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 77,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ],
+              "text": "Diastolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 47,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/86-bp",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "86-bp",
+        "meta": {
+          "versionId": "33331",
+          "lastUpdated": "2016-03-09T15:31:14.107+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2003-03-06: Blood pressure 71/43 mmHg</div>"
+        },
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood pressure systolic and diastolic"
+            }
+          ],
+          "text": "Blood pressure systolic and diastolic"
+        },
+        "subject": {
+          "reference": "Patient/1551992"
+        },
+        "encounter": {
+          "reference": "Encounter/86"
+        },
+        "effectiveDateTime": "2003-03-06",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ],
+              "text": "Systolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 71,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ],
+              "text": "Diastolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 43,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/87-bp",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "87-bp",
+        "meta": {
+          "versionId": "33371",
+          "lastUpdated": "2016-03-09T15:31:14.159+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2003-03-07: Blood pressure 131/81 mmHg</div>"
+        },
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood pressure systolic and diastolic"
+            }
+          ],
+          "text": "Blood pressure systolic and diastolic"
+        },
+        "subject": {
+          "reference": "Patient/1551992"
+        },
+        "encounter": {
+          "reference": "Encounter/87"
+        },
+        "effectiveDateTime": "2003-03-07",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ],
+              "text": "Systolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 131,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ],
+              "text": "Diastolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 81,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/88-bp",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "88-bp",
+        "meta": {
+          "versionId": "33411",
+          "lastUpdated": "2016-03-09T15:31:14.213+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2003-03-10: Blood pressure 133/82 mmHg</div>"
+        },
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood pressure systolic and diastolic"
+            }
+          ],
+          "text": "Blood pressure systolic and diastolic"
+        },
+        "subject": {
+          "reference": "Patient/1551992"
+        },
+        "encounter": {
+          "reference": "Encounter/88"
+        },
+        "effectiveDateTime": "2003-03-10",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ],
+              "text": "Systolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 133,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ],
+              "text": "Diastolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 82,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/89-bp",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "89-bp",
+        "meta": {
+          "versionId": "33451",
+          "lastUpdated": "2016-03-09T15:31:14.269+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2003-11-20: Blood pressure 96/59 mmHg</div>"
+        },
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood pressure systolic and diastolic"
+            }
+          ],
+          "text": "Blood pressure systolic and diastolic"
+        },
+        "subject": {
+          "reference": "Patient/1551992"
+        },
+        "encounter": {
+          "reference": "Encounter/89"
+        },
+        "effectiveDateTime": "2003-11-20",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ],
+              "text": "Systolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 96,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ],
+              "text": "Diastolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 59,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/90-bp",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "90-bp",
+        "meta": {
+          "versionId": "33491",
+          "lastUpdated": "2016-03-09T15:31:14.326+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2003-11-24: Blood pressure 72/44 mmHg</div>"
+        },
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood pressure systolic and diastolic"
+            }
+          ],
+          "text": "Blood pressure systolic and diastolic"
+        },
+        "subject": {
+          "reference": "Patient/1551992"
+        },
+        "encounter": {
+          "reference": "Encounter/90"
+        },
+        "effectiveDateTime": "2003-11-24",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ],
+              "text": "Systolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 72,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ],
+              "text": "Diastolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 44,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/91-bp",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "91-bp",
+        "meta": {
+          "versionId": "33531",
+          "lastUpdated": "2016-03-09T15:31:14.381+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2003-11-25: Blood pressure 121/75 mmHg</div>"
+        },
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood pressure systolic and diastolic"
+            }
+          ],
+          "text": "Blood pressure systolic and diastolic"
+        },
+        "subject": {
+          "reference": "Patient/1551992"
+        },
+        "encounter": {
+          "reference": "Encounter/91"
+        },
+        "effectiveDateTime": "2003-11-25",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ],
+              "text": "Systolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 121,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ],
+              "text": "Diastolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 75,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/92-bp",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "92-bp",
+        "meta": {
+          "versionId": "33571",
+          "lastUpdated": "2016-03-09T15:31:14.440+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2003-11-26: Blood pressure 121/75 mmHg</div>"
+        },
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood pressure systolic and diastolic"
+            }
+          ],
+          "text": "Blood pressure systolic and diastolic"
+        },
+        "subject": {
+          "reference": "Patient/1551992"
+        },
+        "encounter": {
+          "reference": "Encounter/92"
+        },
+        "effectiveDateTime": "2003-11-26",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ],
+              "text": "Systolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 121,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ],
+              "text": "Diastolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 75,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/93-bp",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "93-bp",
+        "meta": {
+          "versionId": "33611",
+          "lastUpdated": "2016-03-09T15:31:14.493+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2004-10-06: Blood pressure 110/67 mmHg</div>"
+        },
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood pressure systolic and diastolic"
+            }
+          ],
+          "text": "Blood pressure systolic and diastolic"
+        },
+        "subject": {
+          "reference": "Patient/1551992"
+        },
+        "encounter": {
+          "reference": "Encounter/93"
+        },
+        "effectiveDateTime": "2004-10-06",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ],
+              "text": "Systolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 110,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ],
+              "text": "Diastolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 67,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/94-bp",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "94-bp",
+        "meta": {
+          "versionId": "33651",
+          "lastUpdated": "2016-03-09T15:31:14.548+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2004-10-07: Blood pressure 101/62 mmHg</div>"
+        },
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood pressure systolic and diastolic"
+            }
+          ],
+          "text": "Blood pressure systolic and diastolic"
+        },
+        "subject": {
+          "reference": "Patient/1551992"
+        },
+        "encounter": {
+          "reference": "Encounter/94"
+        },
+        "effectiveDateTime": "2004-10-07",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ],
+              "text": "Systolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 101,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ],
+              "text": "Diastolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 62,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/95-bp",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "95-bp",
+        "meta": {
+          "versionId": "33691",
+          "lastUpdated": "2016-03-09T15:31:14.608+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2004-10-08: Blood pressure 119/73 mmHg</div>"
+        },
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood pressure systolic and diastolic"
+            }
+          ],
+          "text": "Blood pressure systolic and diastolic"
+        },
+        "subject": {
+          "reference": "Patient/1551992"
+        },
+        "encounter": {
+          "reference": "Encounter/95"
+        },
+        "effectiveDateTime": "2004-10-08",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ],
+              "text": "Systolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 119,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ],
+              "text": "Diastolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 73,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/96-bp",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "96-bp",
+        "meta": {
+          "versionId": "33731",
+          "lastUpdated": "2016-03-09T15:31:14.664+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2007-04-12: Blood pressure 76/46 mmHg</div>"
+        },
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood pressure systolic and diastolic"
+            }
+          ],
+          "text": "Blood pressure systolic and diastolic"
+        },
+        "subject": {
+          "reference": "Patient/1551992"
+        },
+        "encounter": {
+          "reference": "Encounter/96"
+        },
+        "effectiveDateTime": "2007-04-12",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ],
+              "text": "Systolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 76,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ],
+              "text": "Diastolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 46,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/97-bp",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "97-bp",
+        "meta": {
+          "versionId": "33771",
+          "lastUpdated": "2016-03-09T15:31:14.717+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2008-04-02: Blood pressure 88/53 mmHg</div>"
+        },
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood pressure systolic and diastolic"
+            }
+          ],
+          "text": "Blood pressure systolic and diastolic"
+        },
+        "subject": {
+          "reference": "Patient/1551992"
+        },
+        "encounter": {
+          "reference": "Encounter/97"
+        },
+        "effectiveDateTime": "2008-04-02",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ],
+              "text": "Systolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 88,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ],
+              "text": "Diastolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 53,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/98-bp",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "98-bp",
+        "meta": {
+          "versionId": "33811",
+          "lastUpdated": "2016-03-09T15:31:14.769+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2008-04-03: Blood pressure 83/50 mmHg</div>"
+        },
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood pressure systolic and diastolic"
+            }
+          ],
+          "text": "Blood pressure systolic and diastolic"
+        },
+        "subject": {
+          "reference": "Patient/1551992"
+        },
+        "encounter": {
+          "reference": "Encounter/98"
+        },
+        "effectiveDateTime": "2008-04-03",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ],
+              "text": "Systolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 83,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ],
+              "text": "Diastolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 50,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/99-bp",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "99-bp",
+        "meta": {
+          "versionId": "33851",
+          "lastUpdated": "2016-03-09T15:31:14.822+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2008-04-04: Blood pressure 132/80 mmHg</div>"
+        },
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood pressure systolic and diastolic"
+            }
+          ],
+          "text": "Blood pressure systolic and diastolic"
+        },
+        "subject": {
+          "reference": "Patient/1551992"
+        },
+        "encounter": {
+          "reference": "Encounter/99"
+        },
+        "effectiveDateTime": "2008-04-04",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ],
+              "text": "Systolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 132,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ],
+              "text": "Diastolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 80,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/69-height",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "69-height",
+        "meta": {
+          "versionId": "33891",
+          "lastUpdated": "2016-03-09T15:31:14.880+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>1998-08-06: height = 161.29 cm</div>"
+        },
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2",
+              "display": "height"
+            }
+          ],
+          "text": "height"
+        },
+        "subject": {
+          "reference": "Patient/1551992"
+        },
+        "encounter": {
+          "reference": "Encounter/69"
+        },
+        "effectiveDateTime": "1998-08-06",
+        "valueQuantity": {
+          "value": 161.29,
+          "unit": "cm",
+          "system": "http://unitsofmeasure.org",
+          "code": "cm"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/70-height",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "70-height",
+        "meta": {
+          "versionId": "33982",
+          "lastUpdated": "2016-03-09T15:31:14.999+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>1998-08-07: height = 161.544 cm</div>"
+        },
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2",
+              "display": "height"
+            }
+          ],
+          "text": "height"
+        },
+        "subject": {
+          "reference": "Patient/1551992"
+        },
+        "encounter": {
+          "reference": "Encounter/70"
+        },
+        "effectiveDateTime": "1998-08-07",
+        "valueQuantity": {
+          "value": 161.544,
+          "unit": "cm",
+          "system": "http://unitsofmeasure.org",
+          "code": "cm"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/71-height",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "71-height",
+        "meta": {
+          "versionId": "34073",
+          "lastUpdated": "2016-03-09T15:31:15.119+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2000-02-22: height = 161.29 cm</div>"
+        },
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2",
+              "display": "height"
+            }
+          ],
+          "text": "height"
+        },
+        "subject": {
+          "reference": "Patient/1551992"
+        },
+        "encounter": {
+          "reference": "Encounter/71"
+        },
+        "effectiveDateTime": "2000-02-22",
+        "valueQuantity": {
+          "value": 161.29,
+          "unit": "cm",
+          "system": "http://unitsofmeasure.org",
+          "code": "cm"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/72-height",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "72-height",
+        "meta": {
+          "versionId": "34164",
+          "lastUpdated": "2016-03-09T15:31:15.237+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2000-02-24: height = 161.29 cm</div>"
+        },
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2",
+              "display": "height"
+            }
+          ],
+          "text": "height"
+        },
+        "subject": {
+          "reference": "Patient/1551992"
+        },
+        "encounter": {
+          "reference": "Encounter/72"
+        },
+        "effectiveDateTime": "2000-02-24",
+        "valueQuantity": {
+          "value": 161.29,
+          "unit": "cm",
+          "system": "http://unitsofmeasure.org",
+          "code": "cm"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/73-height",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "73-height",
+        "meta": {
+          "versionId": "34255",
+          "lastUpdated": "2016-03-09T15:31:15.355+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2000-02-25: height = 161.29 cm</div>"
+        },
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2",
+              "display": "height"
+            }
+          ],
+          "text": "height"
+        },
+        "subject": {
+          "reference": "Patient/1551992"
+        },
+        "encounter": {
+          "reference": "Encounter/73"
+        },
+        "effectiveDateTime": "2000-02-25",
+        "valueQuantity": {
+          "value": 161.29,
+          "unit": "cm",
+          "system": "http://unitsofmeasure.org",
+          "code": "cm"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/74-height",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "74-height",
+        "meta": {
+          "versionId": "34346",
+          "lastUpdated": "2016-03-09T15:31:15.482+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2000-04-06: height = 161.29 cm</div>"
+        },
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2",
+              "display": "height"
+            }
+          ],
+          "text": "height"
+        },
+        "subject": {
+          "reference": "Patient/1551992"
+        },
+        "encounter": {
+          "reference": "Encounter/74"
+        },
+        "effectiveDateTime": "2000-04-06",
+        "valueQuantity": {
+          "value": 161.29,
+          "unit": "cm",
+          "system": "http://unitsofmeasure.org",
+          "code": "cm"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/75-height",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "75-height",
+        "meta": {
+          "versionId": "34437",
+          "lastUpdated": "2016-03-09T15:31:15.609+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2000-04-07: height = 161.29 cm</div>"
+        },
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2",
+              "display": "height"
+            }
+          ],
+          "text": "height"
+        },
+        "subject": {
+          "reference": "Patient/1551992"
+        },
+        "encounter": {
+          "reference": "Encounter/75"
+        },
+        "effectiveDateTime": "2000-04-07",
+        "valueQuantity": {
+          "value": 161.29,
+          "unit": "cm",
+          "system": "http://unitsofmeasure.org",
+          "code": "cm"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/76-height",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "76-height",
+        "meta": {
+          "versionId": "34528",
+          "lastUpdated": "2016-03-09T15:31:15.729+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2000-05-15: height = 161.29 cm</div>"
+        },
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2",
+              "display": "height"
+            }
+          ],
+          "text": "height"
+        },
+        "subject": {
+          "reference": "Patient/1551992"
+        },
+        "encounter": {
+          "reference": "Encounter/76"
+        },
+        "effectiveDateTime": "2000-05-15",
+        "valueQuantity": {
+          "value": 161.29,
+          "unit": "cm",
+          "system": "http://unitsofmeasure.org",
+          "code": "cm"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/77-height",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "77-height",
+        "meta": {
+          "versionId": "34619",
+          "lastUpdated": "2016-03-09T15:31:15.846+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2000-05-16: height = 161.29 cm</div>"
+        },
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2",
+              "display": "height"
+            }
+          ],
+          "text": "height"
+        },
+        "subject": {
+          "reference": "Patient/1551992"
+        },
+        "encounter": {
+          "reference": "Encounter/77"
+        },
+        "effectiveDateTime": "2000-05-16",
+        "valueQuantity": {
+          "value": 161.29,
+          "unit": "cm",
+          "system": "http://unitsofmeasure.org",
+          "code": "cm"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/78-height",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "78-height",
+        "meta": {
+          "versionId": "34710",
+          "lastUpdated": "2016-03-09T15:31:15.967+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2000-05-17: height = 161.544 cm</div>"
+        },
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2",
+              "display": "height"
+            }
+          ],
+          "text": "height"
+        },
+        "subject": {
+          "reference": "Patient/1551992"
+        },
+        "encounter": {
+          "reference": "Encounter/78"
+        },
+        "effectiveDateTime": "2000-05-17",
+        "valueQuantity": {
+          "value": 161.544,
+          "unit": "cm",
+          "system": "http://unitsofmeasure.org",
+          "code": "cm"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/79-height",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "79-height",
+        "meta": {
+          "versionId": "34801",
+          "lastUpdated": "2016-03-09T15:31:16.090+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2000-05-19: height = 161.29 cm</div>"
+        },
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2",
+              "display": "height"
+            }
+          ],
+          "text": "height"
+        },
+        "subject": {
+          "reference": "Patient/1551992"
+        },
+        "encounter": {
+          "reference": "Encounter/79"
+        },
+        "effectiveDateTime": "2000-05-19",
+        "valueQuantity": {
+          "value": 161.29,
+          "unit": "cm",
+          "system": "http://unitsofmeasure.org",
+          "code": "cm"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/80-height",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "80-height",
+        "meta": {
+          "versionId": "34892",
+          "lastUpdated": "2016-03-09T15:31:16.209+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2000-05-22: height = 161.29 cm</div>"
+        },
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2",
+              "display": "height"
+            }
+          ],
+          "text": "height"
+        },
+        "subject": {
+          "reference": "Patient/1551992"
+        },
+        "encounter": {
+          "reference": "Encounter/80"
+        },
+        "effectiveDateTime": "2000-05-22",
+        "valueQuantity": {
+          "value": 161.29,
+          "unit": "cm",
+          "system": "http://unitsofmeasure.org",
+          "code": "cm"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/81-height",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "81-height",
+        "meta": {
+          "versionId": "34983",
+          "lastUpdated": "2016-03-09T15:31:16.355+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2000-06-08: height = 161.29 cm</div>"
+        },
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2",
+              "display": "height"
+            }
+          ],
+          "text": "height"
+        },
+        "subject": {
+          "reference": "Patient/1551992"
+        },
+        "encounter": {
+          "reference": "Encounter/81"
+        },
+        "effectiveDateTime": "2000-06-08",
+        "valueQuantity": {
+          "value": 161.29,
+          "unit": "cm",
+          "system": "http://unitsofmeasure.org",
+          "code": "cm"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/82-height",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "82-height",
+        "meta": {
+          "versionId": "35074",
+          "lastUpdated": "2016-03-09T15:31:16.474+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2000-06-12: height = 161.29 cm</div>"
+        },
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2",
+              "display": "height"
+            }
+          ],
+          "text": "height"
+        },
+        "subject": {
+          "reference": "Patient/1551992"
+        },
+        "encounter": {
+          "reference": "Encounter/82"
+        },
+        "effectiveDateTime": "2000-06-12",
+        "valueQuantity": {
+          "value": 161.29,
+          "unit": "cm",
+          "system": "http://unitsofmeasure.org",
+          "code": "cm"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/83-height",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "83-height",
+        "meta": {
+          "versionId": "35165",
+          "lastUpdated": "2016-03-09T15:31:16.593+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2000-06-25: height = 161.544 cm</div>"
+        },
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2",
+              "display": "height"
+            }
+          ],
+          "text": "height"
+        },
+        "subject": {
+          "reference": "Patient/1551992"
+        },
+        "encounter": {
+          "reference": "Encounter/83"
+        },
+        "effectiveDateTime": "2000-06-25",
+        "valueQuantity": {
+          "value": 161.544,
+          "unit": "cm",
+          "system": "http://unitsofmeasure.org",
+          "code": "cm"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/84-height",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "84-height",
+        "meta": {
+          "versionId": "35256",
+          "lastUpdated": "2016-03-09T15:31:16.714+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2003-03-04: height = 160.528 cm</div>"
+        },
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2",
+              "display": "height"
+            }
+          ],
+          "text": "height"
+        },
+        "subject": {
+          "reference": "Patient/1551992"
+        },
+        "encounter": {
+          "reference": "Encounter/84"
+        },
+        "effectiveDateTime": "2003-03-04",
+        "valueQuantity": {
+          "value": 160.528,
+          "unit": "cm",
+          "system": "http://unitsofmeasure.org",
+          "code": "cm"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/85-height",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "85-height",
+        "meta": {
+          "versionId": "35347",
+          "lastUpdated": "2016-03-09T15:31:16.833+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2003-03-05: height = 160.528 cm</div>"
+        },
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2",
+              "display": "height"
+            }
+          ],
+          "text": "height"
+        },
+        "subject": {
+          "reference": "Patient/1551992"
+        },
+        "encounter": {
+          "reference": "Encounter/85"
+        },
+        "effectiveDateTime": "2003-03-05",
+        "valueQuantity": {
+          "value": 160.528,
+          "unit": "cm",
+          "system": "http://unitsofmeasure.org",
+          "code": "cm"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/86-height",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "86-height",
+        "meta": {
+          "versionId": "35438",
+          "lastUpdated": "2016-03-09T15:31:16.962+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2003-03-06: height = 160.528 cm</div>"
+        },
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2",
+              "display": "height"
+            }
+          ],
+          "text": "height"
+        },
+        "subject": {
+          "reference": "Patient/1551992"
+        },
+        "encounter": {
+          "reference": "Encounter/86"
+        },
+        "effectiveDateTime": "2003-03-06",
+        "valueQuantity": {
+          "value": 160.528,
+          "unit": "cm",
+          "system": "http://unitsofmeasure.org",
+          "code": "cm"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/87-height",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "87-height",
+        "meta": {
+          "versionId": "35529",
+          "lastUpdated": "2016-03-09T15:31:17.077+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2003-03-07: height = 160.528 cm</div>"
+        },
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2",
+              "display": "height"
+            }
+          ],
+          "text": "height"
+        },
+        "subject": {
+          "reference": "Patient/1551992"
+        },
+        "encounter": {
+          "reference": "Encounter/87"
+        },
+        "effectiveDateTime": "2003-03-07",
+        "valueQuantity": {
+          "value": 160.528,
+          "unit": "cm",
+          "system": "http://unitsofmeasure.org",
+          "code": "cm"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    }
+  ]
+}
