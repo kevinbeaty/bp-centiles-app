@@ -5,8 +5,8 @@
     var dfd = $.Deferred();
 
     setTimeout(function(){
-      var name = 'Aaron Alexis'
-      var birthday = new Date('1977-02-14' ).toISOString();
+      var name = 'Allen Vitalis'
+      var birthday = new Date('2004-04-07' ).toISOString();
       var gender ='male';
       dfd.resolve({
         name: name,

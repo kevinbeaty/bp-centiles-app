@@ -1,358 +1,30 @@
 {
   "resourceType": "Bundle",
   "type": "searchset",
-  "total": 22,
+  "total": 51,
   "link": [
     {
       "relation": "self",
-      "url": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation?code=8302-2%2C55284-4&patient=9995679&patient=9995679"
+      "url": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation?code=8302-2%2C55284-4&patient=99912345&patient=99912345"
+    },
+    {
+      "relation": "next",
+      "url": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation?code=8302-2%2C55284-4&patient=99912345&patient=99912345&_count=50&_skip=50"
     }
   ],
   "entry": [
     {
-      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/2-bp",
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/vp-2-bp",
       "resource": {
         "resourceType": "Observation",
-        "id": "2-bp",
+        "id": "vp-2-bp",
         "meta": {
-          "versionId": "194032",
-          "lastUpdated": "2016-03-09T15:35:38.723+00:00"
+          "versionId": "191930",
+          "lastUpdated": "2016-03-09T15:35:32.315+00:00"
         },
         "text": {
           "status": "generated",
-          "div": "<div>2007-04-18: Blood pressure 121/62 mmHg</div>"
-        },
-        "status": "final",
-        "category": {
-          "coding": [
-            {
-              "system": "http://hl7.org/fhir/observation-category",
-              "code": "vital-signs",
-              "display": "Vital Signs"
-            }
-          ],
-          "text": "Vital Signs"
-        },
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "55284-4",
-              "display": "Blood pressure systolic and diastolic"
-            }
-          ],
-          "text": "Blood pressure systolic and diastolic"
-        },
-        "subject": {
-          "reference": "Patient/9995679"
-        },
-        "encounter": {
-          "reference": "Encounter/2"
-        },
-        "effectiveDateTime": "2007-04-18",
-        "bodySite": {
-          "coding": [
-            {
-              "system": "http://snomed.info/sct",
-              "code": "368209003",
-              "display": "right arm"
-            }
-          ],
-          "text": "right arm"
-        },
-        "component": [
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "8480-6",
-                  "display": "Systolic blood pressure"
-                }
-              ],
-              "text": "Systolic blood pressure"
-            },
-            "valueQuantity": {
-              "value": 121,
-              "unit": "mmHg",
-              "system": "http://unitsofmeasure.org",
-              "code": "mm[Hg]"
-            }
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "8462-4",
-                  "display": "Diastolic blood pressure"
-                }
-              ],
-              "text": "Diastolic blood pressure"
-            },
-            "valueQuantity": {
-              "value": 62,
-              "unit": "mmHg",
-              "system": "http://unitsofmeasure.org",
-              "code": "mm[Hg]"
-            }
-          }
-        ]
-      },
-      "search": {
-        "mode": "match"
-      }
-    },
-    {
-      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/3-bp",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "3-bp",
-        "meta": {
-          "versionId": "194072",
-          "lastUpdated": "2016-03-09T15:35:38.773+00:00"
-        },
-        "text": {
-          "status": "generated",
-          "div": "<div>2007-07-18: Blood pressure 116/64 mmHg</div>"
-        },
-        "extension": [
-          {
-            "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position",
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "system": "http://snomed.info/sct",
-                  "code": "40199007",
-                  "display": "supine"
-                }
-              ],
-              "text": "supine"
-            }
-          }
-        ],
-        "status": "final",
-        "category": {
-          "coding": [
-            {
-              "system": "http://hl7.org/fhir/observation-category",
-              "code": "vital-signs",
-              "display": "Vital Signs"
-            }
-          ],
-          "text": "Vital Signs"
-        },
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "55284-4",
-              "display": "Blood pressure systolic and diastolic"
-            }
-          ],
-          "text": "Blood pressure systolic and diastolic"
-        },
-        "subject": {
-          "reference": "Patient/9995679"
-        },
-        "encounter": {
-          "reference": "Encounter/3"
-        },
-        "effectiveDateTime": "2007-07-18",
-        "bodySite": {
-          "coding": [
-            {
-              "system": "http://snomed.info/sct",
-              "code": "368209003",
-              "display": "right arm"
-            }
-          ],
-          "text": "right arm"
-        },
-        "method": {
-          "coding": [
-            {
-              "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#",
-              "code": "machine",
-              "display": "machine"
-            }
-          ],
-          "text": "machine"
-        },
-        "component": [
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "8480-6",
-                  "display": "Systolic blood pressure"
-                }
-              ],
-              "text": "Systolic blood pressure"
-            },
-            "valueQuantity": {
-              "value": 116,
-              "unit": "mmHg",
-              "system": "http://unitsofmeasure.org",
-              "code": "mm[Hg]"
-            }
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "8462-4",
-                  "display": "Diastolic blood pressure"
-                }
-              ],
-              "text": "Diastolic blood pressure"
-            },
-            "valueQuantity": {
-              "value": 64,
-              "unit": "mmHg",
-              "system": "http://unitsofmeasure.org",
-              "code": "mm[Hg]"
-            }
-          }
-        ]
-      },
-      "search": {
-        "mode": "match"
-      }
-    },
-    {
-      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/4-bp",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "4-bp",
-        "meta": {
-          "versionId": "194112",
-          "lastUpdated": "2016-03-09T15:35:38.831+00:00"
-        },
-        "text": {
-          "status": "generated",
-          "div": "<div>2008-01-16: Blood pressure 120/58 mmHg</div>"
-        },
-        "extension": [
-          {
-            "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position",
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "system": "http://snomed.info/sct",
-                  "code": "40199007",
-                  "display": "supine"
-                }
-              ],
-              "text": "supine"
-            }
-          }
-        ],
-        "status": "final",
-        "category": {
-          "coding": [
-            {
-              "system": "http://hl7.org/fhir/observation-category",
-              "code": "vital-signs",
-              "display": "Vital Signs"
-            }
-          ],
-          "text": "Vital Signs"
-        },
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "55284-4",
-              "display": "Blood pressure systolic and diastolic"
-            }
-          ],
-          "text": "Blood pressure systolic and diastolic"
-        },
-        "subject": {
-          "reference": "Patient/9995679"
-        },
-        "encounter": {
-          "reference": "Encounter/4"
-        },
-        "effectiveDateTime": "2008-01-16",
-        "bodySite": {
-          "coding": [
-            {
-              "system": "http://snomed.info/sct",
-              "code": "368209003",
-              "display": "right arm"
-            }
-          ],
-          "text": "right arm"
-        },
-        "method": {
-          "coding": [
-            {
-              "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#",
-              "code": "machine",
-              "display": "machine"
-            }
-          ],
-          "text": "machine"
-        },
-        "component": [
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "8480-6",
-                  "display": "Systolic blood pressure"
-                }
-              ],
-              "text": "Systolic blood pressure"
-            },
-            "valueQuantity": {
-              "value": 120,
-              "unit": "mmHg",
-              "system": "http://unitsofmeasure.org",
-              "code": "mm[Hg]"
-            }
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "8462-4",
-                  "display": "Diastolic blood pressure"
-                }
-              ],
-              "text": "Diastolic blood pressure"
-            },
-            "valueQuantity": {
-              "value": 58,
-              "unit": "mmHg",
-              "system": "http://unitsofmeasure.org",
-              "code": "mm[Hg]"
-            }
-          }
-        ]
-      },
-      "search": {
-        "mode": "match"
-      }
-    },
-    {
-      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/5-bp",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "5-bp",
-        "meta": {
-          "versionId": "194152",
-          "lastUpdated": "2016-03-09T15:35:38.881+00:00"
-        },
-        "text": {
-          "status": "generated",
-          "div": "<div>2008-06-25: Blood pressure 121/73 mmHg</div>"
+          "div": "<div>2006-04-14: Blood pressure 90/43 mmHg</div>"
         },
         "extension": [
           {
@@ -391,21 +63,21 @@
           "text": "Blood pressure systolic and diastolic"
         },
         "subject": {
-          "reference": "Patient/9995679"
+          "reference": "Patient/99912345"
         },
         "encounter": {
-          "reference": "Encounter/5"
+          "reference": "Encounter/vp-2"
         },
-        "effectiveDateTime": "2008-06-25",
+        "effectiveDateTime": "2006-04-14",
         "bodySite": {
           "coding": [
             {
               "system": "http://snomed.info/sct",
-              "code": "368208006",
-              "display": "left arm"
+              "code": "368209003",
+              "display": "right arm"
             }
           ],
-          "text": "left arm"
+          "text": "right arm"
         },
         "method": {
           "coding": [
@@ -430,7 +102,7 @@
               "text": "Systolic blood pressure"
             },
             "valueQuantity": {
-              "value": 121,
+              "value": 90,
               "unit": "mmHg",
               "system": "http://unitsofmeasure.org",
               "code": "mm[Hg]"
@@ -448,7 +120,7 @@
               "text": "Diastolic blood pressure"
             },
             "valueQuantity": {
-              "value": 73,
+              "value": 43,
               "unit": "mmHg",
               "system": "http://unitsofmeasure.org",
               "code": "mm[Hg]"
@@ -461,17 +133,17 @@
       }
     },
     {
-      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/6-bp",
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/vp-3-bp",
       "resource": {
         "resourceType": "Observation",
-        "id": "6-bp",
+        "id": "vp-3-bp",
         "meta": {
-          "versionId": "194192",
-          "lastUpdated": "2016-03-09T15:35:38.928+00:00"
+          "versionId": "191970",
+          "lastUpdated": "2016-03-09T15:35:32.362+00:00"
         },
         "text": {
           "status": "generated",
-          "div": "<div>2008-06-25: Blood pressure 119/70 mmHg</div>"
+          "div": "<div>2006-06-11: Blood pressure 89/45 mmHg</div>"
         },
         "extension": [
           {
@@ -510,225 +182,12 @@
           "text": "Blood pressure systolic and diastolic"
         },
         "subject": {
-          "reference": "Patient/9995679"
+          "reference": "Patient/99912345"
         },
         "encounter": {
-          "reference": "Encounter/5"
+          "reference": "Encounter/vp-3"
         },
-        "effectiveDateTime": "2008-06-25",
-        "bodySite": {
-          "coding": [
-            {
-              "system": "http://snomed.info/sct",
-              "code": "368208006",
-              "display": "left arm"
-            }
-          ],
-          "text": "left arm"
-        },
-        "method": {
-          "coding": [
-            {
-              "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#",
-              "code": "machine",
-              "display": "machine"
-            }
-          ],
-          "text": "machine"
-        },
-        "component": [
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "8480-6",
-                  "display": "Systolic blood pressure"
-                }
-              ],
-              "text": "Systolic blood pressure"
-            },
-            "valueQuantity": {
-              "value": 119,
-              "unit": "mmHg",
-              "system": "http://unitsofmeasure.org",
-              "code": "mm[Hg]"
-            }
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "8462-4",
-                  "display": "Diastolic blood pressure"
-                }
-              ],
-              "text": "Diastolic blood pressure"
-            },
-            "valueQuantity": {
-              "value": 70,
-              "unit": "mmHg",
-              "system": "http://unitsofmeasure.org",
-              "code": "mm[Hg]"
-            }
-          }
-        ]
-      },
-      "search": {
-        "mode": "match"
-      }
-    },
-    {
-      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/7-bp",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "7-bp",
-        "meta": {
-          "versionId": "194232",
-          "lastUpdated": "2016-03-09T15:35:38.974+00:00"
-        },
-        "text": {
-          "status": "generated",
-          "div": "<div>2009-06-10: Blood pressure 137/68 mmHg</div>"
-        },
-        "status": "final",
-        "category": {
-          "coding": [
-            {
-              "system": "http://hl7.org/fhir/observation-category",
-              "code": "vital-signs",
-              "display": "Vital Signs"
-            }
-          ],
-          "text": "Vital Signs"
-        },
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "55284-4",
-              "display": "Blood pressure systolic and diastolic"
-            }
-          ],
-          "text": "Blood pressure systolic and diastolic"
-        },
-        "subject": {
-          "reference": "Patient/9995679"
-        },
-        "encounter": {
-          "reference": "Encounter/7"
-        },
-        "effectiveDateTime": "2009-06-10",
-        "bodySite": {
-          "coding": [
-            {
-              "system": "http://snomed.info/sct",
-              "code": "368209003",
-              "display": "right arm"
-            }
-          ],
-          "text": "right arm"
-        },
-        "component": [
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "8480-6",
-                  "display": "Systolic blood pressure"
-                }
-              ],
-              "text": "Systolic blood pressure"
-            },
-            "valueQuantity": {
-              "value": 137,
-              "unit": "mmHg",
-              "system": "http://unitsofmeasure.org",
-              "code": "mm[Hg]"
-            }
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "8462-4",
-                  "display": "Diastolic blood pressure"
-                }
-              ],
-              "text": "Diastolic blood pressure"
-            },
-            "valueQuantity": {
-              "value": 68,
-              "unit": "mmHg",
-              "system": "http://unitsofmeasure.org",
-              "code": "mm[Hg]"
-            }
-          }
-        ]
-      },
-      "search": {
-        "mode": "match"
-      }
-    },
-    {
-      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/8-bp",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "8-bp",
-        "meta": {
-          "versionId": "194272",
-          "lastUpdated": "2016-03-09T15:35:39.021+00:00"
-        },
-        "text": {
-          "status": "generated",
-          "div": "<div>2009-06-10: Blood pressure 168/86 mmHg</div>"
-        },
-        "extension": [
-          {
-            "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position",
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "system": "http://snomed.info/sct",
-                  "code": "40199007",
-                  "display": "supine"
-                }
-              ],
-              "text": "supine"
-            }
-          }
-        ],
-        "status": "final",
-        "category": {
-          "coding": [
-            {
-              "system": "http://hl7.org/fhir/observation-category",
-              "code": "vital-signs",
-              "display": "Vital Signs"
-            }
-          ],
-          "text": "Vital Signs"
-        },
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "55284-4",
-              "display": "Blood pressure systolic and diastolic"
-            }
-          ],
-          "text": "Blood pressure systolic and diastolic"
-        },
-        "subject": {
-          "reference": "Patient/9995679"
-        },
-        "encounter": {
-          "reference": "Encounter/7"
-        },
-        "effectiveDateTime": "2009-06-10",
+        "effectiveDateTime": "2006-06-11",
         "bodySite": {
           "coding": [
             {
@@ -762,7 +221,7 @@
               "text": "Systolic blood pressure"
             },
             "valueQuantity": {
-              "value": 168,
+              "value": 89,
               "unit": "mmHg",
               "system": "http://unitsofmeasure.org",
               "code": "mm[Hg]"
@@ -780,7 +239,7 @@
               "text": "Diastolic blood pressure"
             },
             "valueQuantity": {
-              "value": 86,
+              "value": 45,
               "unit": "mmHg",
               "system": "http://unitsofmeasure.org",
               "code": "mm[Hg]"
@@ -793,731 +252,17 @@
       }
     },
     {
-      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/9-bp",
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/vp-4-bp",
       "resource": {
         "resourceType": "Observation",
-        "id": "9-bp",
+        "id": "vp-4-bp",
         "meta": {
-          "versionId": "194312",
-          "lastUpdated": "2016-03-09T15:35:39.067+00:00"
+          "versionId": "192010",
+          "lastUpdated": "2016-03-09T15:35:32.408+00:00"
         },
         "text": {
           "status": "generated",
-          "div": "<div>2009-12-23: Blood pressure 122/66 mmHg</div>"
-        },
-        "extension": [
-          {
-            "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position",
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "system": "http://snomed.info/sct",
-                  "code": "40199007",
-                  "display": "supine"
-                }
-              ],
-              "text": "supine"
-            }
-          }
-        ],
-        "status": "final",
-        "category": {
-          "coding": [
-            {
-              "system": "http://hl7.org/fhir/observation-category",
-              "code": "vital-signs",
-              "display": "Vital Signs"
-            }
-          ],
-          "text": "Vital Signs"
-        },
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "55284-4",
-              "display": "Blood pressure systolic and diastolic"
-            }
-          ],
-          "text": "Blood pressure systolic and diastolic"
-        },
-        "subject": {
-          "reference": "Patient/9995679"
-        },
-        "encounter": {
-          "reference": "Encounter/9"
-        },
-        "effectiveDateTime": "2009-12-23",
-        "bodySite": {
-          "coding": [
-            {
-              "system": "http://snomed.info/sct",
-              "code": "368208006",
-              "display": "left arm"
-            }
-          ],
-          "text": "left arm"
-        },
-        "method": {
-          "coding": [
-            {
-              "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#",
-              "code": "machine",
-              "display": "machine"
-            }
-          ],
-          "text": "machine"
-        },
-        "component": [
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "8480-6",
-                  "display": "Systolic blood pressure"
-                }
-              ],
-              "text": "Systolic blood pressure"
-            },
-            "valueQuantity": {
-              "value": 122,
-              "unit": "mmHg",
-              "system": "http://unitsofmeasure.org",
-              "code": "mm[Hg]"
-            }
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "8462-4",
-                  "display": "Diastolic blood pressure"
-                }
-              ],
-              "text": "Diastolic blood pressure"
-            },
-            "valueQuantity": {
-              "value": 66,
-              "unit": "mmHg",
-              "system": "http://unitsofmeasure.org",
-              "code": "mm[Hg]"
-            }
-          }
-        ]
-      },
-      "search": {
-        "mode": "match"
-      }
-    },
-    {
-      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/10-bp",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "10-bp",
-        "meta": {
-          "versionId": "194352",
-          "lastUpdated": "2016-03-09T15:35:39.147+00:00"
-        },
-        "text": {
-          "status": "generated",
-          "div": "<div>2009-12-23: Blood pressure 121/65 mmHg</div>"
-        },
-        "extension": [
-          {
-            "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position",
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "system": "http://snomed.info/sct",
-                  "code": "40199007",
-                  "display": "supine"
-                }
-              ],
-              "text": "supine"
-            }
-          }
-        ],
-        "status": "final",
-        "category": {
-          "coding": [
-            {
-              "system": "http://hl7.org/fhir/observation-category",
-              "code": "vital-signs",
-              "display": "Vital Signs"
-            }
-          ],
-          "text": "Vital Signs"
-        },
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "55284-4",
-              "display": "Blood pressure systolic and diastolic"
-            }
-          ],
-          "text": "Blood pressure systolic and diastolic"
-        },
-        "subject": {
-          "reference": "Patient/9995679"
-        },
-        "encounter": {
-          "reference": "Encounter/9"
-        },
-        "effectiveDateTime": "2009-12-23",
-        "bodySite": {
-          "coding": [
-            {
-              "system": "http://snomed.info/sct",
-              "code": "368209003",
-              "display": "right arm"
-            }
-          ],
-          "text": "right arm"
-        },
-        "method": {
-          "coding": [
-            {
-              "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#",
-              "code": "machine",
-              "display": "machine"
-            }
-          ],
-          "text": "machine"
-        },
-        "component": [
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "8480-6",
-                  "display": "Systolic blood pressure"
-                }
-              ],
-              "text": "Systolic blood pressure"
-            },
-            "valueQuantity": {
-              "value": 121,
-              "unit": "mmHg",
-              "system": "http://unitsofmeasure.org",
-              "code": "mm[Hg]"
-            }
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "8462-4",
-                  "display": "Diastolic blood pressure"
-                }
-              ],
-              "text": "Diastolic blood pressure"
-            },
-            "valueQuantity": {
-              "value": 65,
-              "unit": "mmHg",
-              "system": "http://unitsofmeasure.org",
-              "code": "mm[Hg]"
-            }
-          }
-        ]
-      },
-      "search": {
-        "mode": "match"
-      }
-    },
-    {
-      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/11-bp",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "11-bp",
-        "meta": {
-          "versionId": "194392",
-          "lastUpdated": "2016-03-09T15:35:39.194+00:00"
-        },
-        "text": {
-          "status": "generated",
-          "div": "<div>2009-12-23: Blood pressure 119/60 mmHg</div>"
-        },
-        "extension": [
-          {
-            "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position",
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "system": "http://snomed.info/sct",
-                  "code": "40199007",
-                  "display": "supine"
-                }
-              ],
-              "text": "supine"
-            }
-          }
-        ],
-        "status": "final",
-        "category": {
-          "coding": [
-            {
-              "system": "http://hl7.org/fhir/observation-category",
-              "code": "vital-signs",
-              "display": "Vital Signs"
-            }
-          ],
-          "text": "Vital Signs"
-        },
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "55284-4",
-              "display": "Blood pressure systolic and diastolic"
-            }
-          ],
-          "text": "Blood pressure systolic and diastolic"
-        },
-        "subject": {
-          "reference": "Patient/9995679"
-        },
-        "encounter": {
-          "reference": "Encounter/9"
-        },
-        "effectiveDateTime": "2009-12-23",
-        "bodySite": {
-          "coding": [
-            {
-              "system": "http://snomed.info/sct",
-              "code": "368209003",
-              "display": "right arm"
-            }
-          ],
-          "text": "right arm"
-        },
-        "method": {
-          "coding": [
-            {
-              "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#",
-              "code": "machine",
-              "display": "machine"
-            }
-          ],
-          "text": "machine"
-        },
-        "component": [
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "8480-6",
-                  "display": "Systolic blood pressure"
-                }
-              ],
-              "text": "Systolic blood pressure"
-            },
-            "valueQuantity": {
-              "value": 119,
-              "unit": "mmHg",
-              "system": "http://unitsofmeasure.org",
-              "code": "mm[Hg]"
-            }
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "8462-4",
-                  "display": "Diastolic blood pressure"
-                }
-              ],
-              "text": "Diastolic blood pressure"
-            },
-            "valueQuantity": {
-              "value": 60,
-              "unit": "mmHg",
-              "system": "http://unitsofmeasure.org",
-              "code": "mm[Hg]"
-            }
-          }
-        ]
-      },
-      "search": {
-        "mode": "match"
-      }
-    },
-    {
-      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/12-bp",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "12-bp",
-        "meta": {
-          "versionId": "194432",
-          "lastUpdated": "2016-03-09T15:35:39.244+00:00"
-        },
-        "text": {
-          "status": "generated",
-          "div": "<div>2009-12-23: Blood pressure 121/57 mmHg</div>"
-        },
-        "extension": [
-          {
-            "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position",
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "system": "http://snomed.info/sct",
-                  "code": "40199007",
-                  "display": "supine"
-                }
-              ],
-              "text": "supine"
-            }
-          }
-        ],
-        "status": "final",
-        "category": {
-          "coding": [
-            {
-              "system": "http://hl7.org/fhir/observation-category",
-              "code": "vital-signs",
-              "display": "Vital Signs"
-            }
-          ],
-          "text": "Vital Signs"
-        },
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "55284-4",
-              "display": "Blood pressure systolic and diastolic"
-            }
-          ],
-          "text": "Blood pressure systolic and diastolic"
-        },
-        "subject": {
-          "reference": "Patient/9995679"
-        },
-        "encounter": {
-          "reference": "Encounter/9"
-        },
-        "effectiveDateTime": "2009-12-23",
-        "bodySite": {
-          "coding": [
-            {
-              "system": "http://snomed.info/sct",
-              "code": "368209003",
-              "display": "right arm"
-            }
-          ],
-          "text": "right arm"
-        },
-        "method": {
-          "coding": [
-            {
-              "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#",
-              "code": "machine",
-              "display": "machine"
-            }
-          ],
-          "text": "machine"
-        },
-        "component": [
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "8480-6",
-                  "display": "Systolic blood pressure"
-                }
-              ],
-              "text": "Systolic blood pressure"
-            },
-            "valueQuantity": {
-              "value": 121,
-              "unit": "mmHg",
-              "system": "http://unitsofmeasure.org",
-              "code": "mm[Hg]"
-            }
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "8462-4",
-                  "display": "Diastolic blood pressure"
-                }
-              ],
-              "text": "Diastolic blood pressure"
-            },
-            "valueQuantity": {
-              "value": 57,
-              "unit": "mmHg",
-              "system": "http://unitsofmeasure.org",
-              "code": "mm[Hg]"
-            }
-          }
-        ]
-      },
-      "search": {
-        "mode": "match"
-      }
-    },
-    {
-      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/13-bp",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "13-bp",
-        "meta": {
-          "versionId": "194472",
-          "lastUpdated": "2016-03-09T15:35:39.290+00:00"
-        },
-        "text": {
-          "status": "generated",
-          "div": "<div>2009-12-23: Blood pressure 131/71 mmHg</div>"
-        },
-        "extension": [
-          {
-            "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position",
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "system": "http://snomed.info/sct",
-                  "code": "40199007",
-                  "display": "supine"
-                }
-              ],
-              "text": "supine"
-            }
-          }
-        ],
-        "status": "final",
-        "category": {
-          "coding": [
-            {
-              "system": "http://hl7.org/fhir/observation-category",
-              "code": "vital-signs",
-              "display": "Vital Signs"
-            }
-          ],
-          "text": "Vital Signs"
-        },
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "55284-4",
-              "display": "Blood pressure systolic and diastolic"
-            }
-          ],
-          "text": "Blood pressure systolic and diastolic"
-        },
-        "subject": {
-          "reference": "Patient/9995679"
-        },
-        "encounter": {
-          "reference": "Encounter/9"
-        },
-        "effectiveDateTime": "2009-12-23",
-        "bodySite": {
-          "coding": [
-            {
-              "system": "http://snomed.info/sct",
-              "code": "368209003",
-              "display": "right arm"
-            }
-          ],
-          "text": "right arm"
-        },
-        "method": {
-          "coding": [
-            {
-              "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#",
-              "code": "machine",
-              "display": "machine"
-            }
-          ],
-          "text": "machine"
-        },
-        "component": [
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "8480-6",
-                  "display": "Systolic blood pressure"
-                }
-              ],
-              "text": "Systolic blood pressure"
-            },
-            "valueQuantity": {
-              "value": 131,
-              "unit": "mmHg",
-              "system": "http://unitsofmeasure.org",
-              "code": "mm[Hg]"
-            }
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "8462-4",
-                  "display": "Diastolic blood pressure"
-                }
-              ],
-              "text": "Diastolic blood pressure"
-            },
-            "valueQuantity": {
-              "value": 71,
-              "unit": "mmHg",
-              "system": "http://unitsofmeasure.org",
-              "code": "mm[Hg]"
-            }
-          }
-        ]
-      },
-      "search": {
-        "mode": "match"
-      }
-    },
-    {
-      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/14-bp",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "14-bp",
-        "meta": {
-          "versionId": "194512",
-          "lastUpdated": "2016-03-09T15:35:39.337+00:00"
-        },
-        "text": {
-          "status": "generated",
-          "div": "<div>2009-12-23: Blood pressure 123/58 mmHg</div>"
-        },
-        "extension": [
-          {
-            "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position",
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "system": "http://snomed.info/sct",
-                  "code": "40199007",
-                  "display": "supine"
-                }
-              ],
-              "text": "supine"
-            }
-          }
-        ],
-        "status": "final",
-        "category": {
-          "coding": [
-            {
-              "system": "http://hl7.org/fhir/observation-category",
-              "code": "vital-signs",
-              "display": "Vital Signs"
-            }
-          ],
-          "text": "Vital Signs"
-        },
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "55284-4",
-              "display": "Blood pressure systolic and diastolic"
-            }
-          ],
-          "text": "Blood pressure systolic and diastolic"
-        },
-        "subject": {
-          "reference": "Patient/9995679"
-        },
-        "encounter": {
-          "reference": "Encounter/9"
-        },
-        "effectiveDateTime": "2009-12-23",
-        "bodySite": {
-          "coding": [
-            {
-              "system": "http://snomed.info/sct",
-              "code": "368209003",
-              "display": "right arm"
-            }
-          ],
-          "text": "right arm"
-        },
-        "method": {
-          "coding": [
-            {
-              "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#",
-              "code": "machine",
-              "display": "machine"
-            }
-          ],
-          "text": "machine"
-        },
-        "component": [
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "8480-6",
-                  "display": "Systolic blood pressure"
-                }
-              ],
-              "text": "Systolic blood pressure"
-            },
-            "valueQuantity": {
-              "value": 123,
-              "unit": "mmHg",
-              "system": "http://unitsofmeasure.org",
-              "code": "mm[Hg]"
-            }
-          },
-          {
-            "code": {
-              "coding": [
-                {
-                  "system": "http://loinc.org",
-                  "code": "8462-4",
-                  "display": "Diastolic blood pressure"
-                }
-              ],
-              "text": "Diastolic blood pressure"
-            },
-            "valueQuantity": {
-              "value": 58,
-              "unit": "mmHg",
-              "system": "http://unitsofmeasure.org",
-              "code": "mm[Hg]"
-            }
-          }
-        ]
-      },
-      "search": {
-        "mode": "match"
-      }
-    },
-    {
-      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/15-bp",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "15-bp",
-        "meta": {
-          "versionId": "194552",
-          "lastUpdated": "2016-03-09T15:35:39.384+00:00"
-        },
-        "text": {
-          "status": "generated",
-          "div": "<div>2010-12-22: Blood pressure 123/59 mmHg</div>"
+          "div": "<div>2006-07-11: Blood pressure 92/46 mmHg</div>"
         },
         "extension": [
           {
@@ -1556,12 +301,131 @@
           "text": "Blood pressure systolic and diastolic"
         },
         "subject": {
-          "reference": "Patient/9995679"
+          "reference": "Patient/99912345"
         },
         "encounter": {
-          "reference": "Encounter/15"
+          "reference": "Encounter/vp-4"
         },
-        "effectiveDateTime": "2010-12-22",
+        "effectiveDateTime": "2006-07-11",
+        "bodySite": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "61396006",
+              "display": "left thigh"
+            }
+          ],
+          "text": "left thigh"
+        },
+        "method": {
+          "coding": [
+            {
+              "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#",
+              "code": "machine",
+              "display": "machine"
+            }
+          ],
+          "text": "machine"
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ],
+              "text": "Systolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 92,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ],
+              "text": "Diastolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 46,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/vp-6-bp",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "vp-6-bp",
+        "meta": {
+          "versionId": "192050",
+          "lastUpdated": "2016-03-09T15:35:32.455+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2006-08-06: Blood pressure 91/43 mmHg</div>"
+        },
+        "extension": [
+          {
+            "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "33586001",
+                  "display": "sitting"
+                }
+              ],
+              "text": "sitting"
+            }
+          }
+        ],
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood pressure systolic and diastolic"
+            }
+          ],
+          "text": "Blood pressure systolic and diastolic"
+        },
+        "subject": {
+          "reference": "Patient/99912345"
+        },
+        "encounter": {
+          "reference": "Encounter/vp-6"
+        },
+        "effectiveDateTime": "2006-08-06",
         "bodySite": {
           "coding": [
             {
@@ -1595,7 +459,7 @@
               "text": "Systolic blood pressure"
             },
             "valueQuantity": {
-              "value": 123,
+              "value": 91,
               "unit": "mmHg",
               "system": "http://unitsofmeasure.org",
               "code": "mm[Hg]"
@@ -1613,7 +477,7 @@
               "text": "Diastolic blood pressure"
             },
             "valueQuantity": {
-              "value": 59,
+              "value": 43,
               "unit": "mmHg",
               "system": "http://unitsofmeasure.org",
               "code": "mm[Hg]"
@@ -1626,17 +490,4182 @@
       }
     },
     {
-      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/1-height",
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/vp-7-bp",
       "resource": {
         "resourceType": "Observation",
-        "id": "1-height",
+        "id": "vp-7-bp",
         "meta": {
-          "versionId": "194592",
-          "lastUpdated": "2016-03-09T15:35:39.430+00:00"
+          "versionId": "192090",
+          "lastUpdated": "2016-03-09T15:35:32.502+00:00"
         },
         "text": {
           "status": "generated",
-          "div": "<div>2006-12-27: height = 198.0 cm</div>"
+          "div": "<div>2006-08-14: Blood pressure 90/48 mmHg</div>"
+        },
+        "extension": [
+          {
+            "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "33586001",
+                  "display": "sitting"
+                }
+              ],
+              "text": "sitting"
+            }
+          }
+        ],
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood pressure systolic and diastolic"
+            }
+          ],
+          "text": "Blood pressure systolic and diastolic"
+        },
+        "subject": {
+          "reference": "Patient/99912345"
+        },
+        "encounter": {
+          "reference": "Encounter/vp-7"
+        },
+        "effectiveDateTime": "2006-08-14",
+        "bodySite": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "368209003",
+              "display": "right arm"
+            }
+          ],
+          "text": "right arm"
+        },
+        "method": {
+          "coding": [
+            {
+              "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#",
+              "code": "auscultation",
+              "display": "auscultation"
+            }
+          ],
+          "text": "auscultation"
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ],
+              "text": "Systolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 90,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ],
+              "text": "Diastolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 48,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/vp-8-bp",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "vp-8-bp",
+        "meta": {
+          "versionId": "192130",
+          "lastUpdated": "2016-03-09T15:35:32.550+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2006-09-14: Blood pressure 92/46 mmHg</div>"
+        },
+        "extension": [
+          {
+            "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "33586001",
+                  "display": "sitting"
+                }
+              ],
+              "text": "sitting"
+            }
+          }
+        ],
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood pressure systolic and diastolic"
+            }
+          ],
+          "text": "Blood pressure systolic and diastolic"
+        },
+        "subject": {
+          "reference": "Patient/99912345"
+        },
+        "encounter": {
+          "reference": "Encounter/vp-8"
+        },
+        "effectiveDateTime": "2006-09-14",
+        "bodySite": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "368209003",
+              "display": "right arm"
+            }
+          ],
+          "text": "right arm"
+        },
+        "method": {
+          "coding": [
+            {
+              "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#",
+              "code": "auscultation",
+              "display": "auscultation"
+            }
+          ],
+          "text": "auscultation"
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ],
+              "text": "Systolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 92,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ],
+              "text": "Diastolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 46,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/vp-9-bp",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "vp-9-bp",
+        "meta": {
+          "versionId": "192170",
+          "lastUpdated": "2016-03-09T15:35:32.597+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2006-10-28: Blood pressure 91/46 mmHg</div>"
+        },
+        "extension": [
+          {
+            "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "33586001",
+                  "display": "sitting"
+                }
+              ],
+              "text": "sitting"
+            }
+          }
+        ],
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood pressure systolic and diastolic"
+            }
+          ],
+          "text": "Blood pressure systolic and diastolic"
+        },
+        "subject": {
+          "reference": "Patient/99912345"
+        },
+        "encounter": {
+          "reference": "Encounter/vp-9"
+        },
+        "effectiveDateTime": "2006-10-28",
+        "bodySite": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "368209003",
+              "display": "right arm"
+            }
+          ],
+          "text": "right arm"
+        },
+        "method": {
+          "coding": [
+            {
+              "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#",
+              "code": "auscultation",
+              "display": "auscultation"
+            }
+          ],
+          "text": "auscultation"
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ],
+              "text": "Systolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 91,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ],
+              "text": "Diastolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 46,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/vp-10-bp",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "vp-10-bp",
+        "meta": {
+          "versionId": "192210",
+          "lastUpdated": "2016-03-09T15:35:32.645+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2006-11-14: Blood pressure 93/45 mmHg</div>"
+        },
+        "extension": [
+          {
+            "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "33586001",
+                  "display": "sitting"
+                }
+              ],
+              "text": "sitting"
+            }
+          }
+        ],
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood pressure systolic and diastolic"
+            }
+          ],
+          "text": "Blood pressure systolic and diastolic"
+        },
+        "subject": {
+          "reference": "Patient/99912345"
+        },
+        "encounter": {
+          "reference": "Encounter/vp-10"
+        },
+        "effectiveDateTime": "2006-11-14",
+        "bodySite": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "368209003",
+              "display": "right arm"
+            }
+          ],
+          "text": "right arm"
+        },
+        "method": {
+          "coding": [
+            {
+              "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#",
+              "code": "auscultation",
+              "display": "auscultation"
+            }
+          ],
+          "text": "auscultation"
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ],
+              "text": "Systolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 93,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ],
+              "text": "Diastolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 45,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/vp-11-bp",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "vp-11-bp",
+        "meta": {
+          "versionId": "192250",
+          "lastUpdated": "2016-03-09T15:35:32.697+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2006-11-19: Blood pressure 93/45 mmHg</div>"
+        },
+        "extension": [
+          {
+            "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "33586001",
+                  "display": "sitting"
+                }
+              ],
+              "text": "sitting"
+            }
+          }
+        ],
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood pressure systolic and diastolic"
+            }
+          ],
+          "text": "Blood pressure systolic and diastolic"
+        },
+        "subject": {
+          "reference": "Patient/99912345"
+        },
+        "encounter": {
+          "reference": "Encounter/vp-11"
+        },
+        "effectiveDateTime": "2006-11-19",
+        "bodySite": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "368209003",
+              "display": "right arm"
+            }
+          ],
+          "text": "right arm"
+        },
+        "method": {
+          "coding": [
+            {
+              "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#",
+              "code": "auscultation",
+              "display": "auscultation"
+            }
+          ],
+          "text": "auscultation"
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ],
+              "text": "Systolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 93,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ],
+              "text": "Diastolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 45,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/vp-15-bp",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "vp-15-bp",
+        "meta": {
+          "versionId": "192290",
+          "lastUpdated": "2016-03-09T15:35:32.744+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2007-08-19: Blood pressure 98/52 mmHg</div>"
+        },
+        "extension": [
+          {
+            "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "33586001",
+                  "display": "sitting"
+                }
+              ],
+              "text": "sitting"
+            }
+          }
+        ],
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood pressure systolic and diastolic"
+            }
+          ],
+          "text": "Blood pressure systolic and diastolic"
+        },
+        "subject": {
+          "reference": "Patient/99912345"
+        },
+        "encounter": {
+          "reference": "Encounter/vp-15"
+        },
+        "effectiveDateTime": "2007-08-19",
+        "bodySite": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "368209003",
+              "display": "right arm"
+            }
+          ],
+          "text": "right arm"
+        },
+        "method": {
+          "coding": [
+            {
+              "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#",
+              "code": "machine",
+              "display": "machine"
+            }
+          ],
+          "text": "machine"
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ],
+              "text": "Systolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 98,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ],
+              "text": "Diastolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 52,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/vp-17-bp",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "vp-17-bp",
+        "meta": {
+          "versionId": "192330",
+          "lastUpdated": "2016-03-09T15:35:32.795+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2007-09-06: Blood pressure 99/50 mmHg</div>"
+        },
+        "extension": [
+          {
+            "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "33586001",
+                  "display": "sitting"
+                }
+              ],
+              "text": "sitting"
+            }
+          }
+        ],
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood pressure systolic and diastolic"
+            }
+          ],
+          "text": "Blood pressure systolic and diastolic"
+        },
+        "subject": {
+          "reference": "Patient/99912345"
+        },
+        "encounter": {
+          "reference": "Encounter/vp-17"
+        },
+        "effectiveDateTime": "2007-09-06",
+        "bodySite": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "368209003",
+              "display": "right arm"
+            }
+          ],
+          "text": "right arm"
+        },
+        "method": {
+          "coding": [
+            {
+              "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#",
+              "code": "machine",
+              "display": "machine"
+            }
+          ],
+          "text": "machine"
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ],
+              "text": "Systolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 99,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ],
+              "text": "Diastolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 50,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/vp-19-bp",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "vp-19-bp",
+        "meta": {
+          "versionId": "192370",
+          "lastUpdated": "2016-03-09T15:35:32.842+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2007-10-02: Blood pressure 100/52 mmHg</div>"
+        },
+        "extension": [
+          {
+            "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "33586001",
+                  "display": "sitting"
+                }
+              ],
+              "text": "sitting"
+            }
+          }
+        ],
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood pressure systolic and diastolic"
+            }
+          ],
+          "text": "Blood pressure systolic and diastolic"
+        },
+        "subject": {
+          "reference": "Patient/99912345"
+        },
+        "encounter": {
+          "reference": "Encounter/vp-19"
+        },
+        "effectiveDateTime": "2007-10-02",
+        "bodySite": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "368209003",
+              "display": "right arm"
+            }
+          ],
+          "text": "right arm"
+        },
+        "method": {
+          "coding": [
+            {
+              "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#",
+              "code": "machine",
+              "display": "machine"
+            }
+          ],
+          "text": "machine"
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ],
+              "text": "Systolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 100,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ],
+              "text": "Diastolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 52,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/vp-20-bp",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "vp-20-bp",
+        "meta": {
+          "versionId": "192410",
+          "lastUpdated": "2016-03-09T15:35:32.888+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2007-10-02: Blood pressure 99/54 mmHg</div>"
+        },
+        "extension": [
+          {
+            "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "33586001",
+                  "display": "sitting"
+                }
+              ],
+              "text": "sitting"
+            }
+          }
+        ],
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood pressure systolic and diastolic"
+            }
+          ],
+          "text": "Blood pressure systolic and diastolic"
+        },
+        "subject": {
+          "reference": "Patient/99912345"
+        },
+        "encounter": {
+          "reference": "Encounter/vp-19"
+        },
+        "effectiveDateTime": "2007-10-02",
+        "bodySite": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "61396006",
+              "display": "left thigh"
+            }
+          ],
+          "text": "left thigh"
+        },
+        "method": {
+          "coding": [
+            {
+              "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#",
+              "code": "machine",
+              "display": "machine"
+            }
+          ],
+          "text": "machine"
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ],
+              "text": "Systolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 99,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ],
+              "text": "Diastolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 54,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/vp-21-bp",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "vp-21-bp",
+        "meta": {
+          "versionId": "192450",
+          "lastUpdated": "2016-03-09T15:35:32.934+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2007-11-15: Blood pressure 100/52 mmHg</div>"
+        },
+        "extension": [
+          {
+            "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "33586001",
+                  "display": "sitting"
+                }
+              ],
+              "text": "sitting"
+            }
+          }
+        ],
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood pressure systolic and diastolic"
+            }
+          ],
+          "text": "Blood pressure systolic and diastolic"
+        },
+        "subject": {
+          "reference": "Patient/99912345"
+        },
+        "encounter": {
+          "reference": "Encounter/vp-21"
+        },
+        "effectiveDateTime": "2007-11-15",
+        "bodySite": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "368209003",
+              "display": "right arm"
+            }
+          ],
+          "text": "right arm"
+        },
+        "method": {
+          "coding": [
+            {
+              "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#",
+              "code": "machine",
+              "display": "machine"
+            }
+          ],
+          "text": "machine"
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ],
+              "text": "Systolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 100,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ],
+              "text": "Diastolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 52,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/vp-22-bp",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "vp-22-bp",
+        "meta": {
+          "versionId": "192490",
+          "lastUpdated": "2016-03-09T15:35:32.980+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2008-02-22: Blood pressure 103/56 mmHg</div>"
+        },
+        "extension": [
+          {
+            "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "33586001",
+                  "display": "sitting"
+                }
+              ],
+              "text": "sitting"
+            }
+          }
+        ],
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood pressure systolic and diastolic"
+            }
+          ],
+          "text": "Blood pressure systolic and diastolic"
+        },
+        "subject": {
+          "reference": "Patient/99912345"
+        },
+        "encounter": {
+          "reference": "Encounter/vp-22"
+        },
+        "effectiveDateTime": "2008-02-22",
+        "bodySite": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "61396006",
+              "display": "left thigh"
+            }
+          ],
+          "text": "left thigh"
+        },
+        "method": {
+          "coding": [
+            {
+              "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#",
+              "code": "machine",
+              "display": "machine"
+            }
+          ],
+          "text": "machine"
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ],
+              "text": "Systolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 103,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ],
+              "text": "Diastolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 56,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/vp-24-bp",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "vp-24-bp",
+        "meta": {
+          "versionId": "192530",
+          "lastUpdated": "2016-03-09T15:35:33.027+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2008-03-10: Blood pressure 98/55 mmHg</div>"
+        },
+        "extension": [
+          {
+            "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "33586001",
+                  "display": "sitting"
+                }
+              ],
+              "text": "sitting"
+            }
+          }
+        ],
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood pressure systolic and diastolic"
+            }
+          ],
+          "text": "Blood pressure systolic and diastolic"
+        },
+        "subject": {
+          "reference": "Patient/99912345"
+        },
+        "encounter": {
+          "reference": "Encounter/vp-24"
+        },
+        "effectiveDateTime": "2008-03-10",
+        "bodySite": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "61396006",
+              "display": "left thigh"
+            }
+          ],
+          "text": "left thigh"
+        },
+        "method": {
+          "coding": [
+            {
+              "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#",
+              "code": "machine",
+              "display": "machine"
+            }
+          ],
+          "text": "machine"
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ],
+              "text": "Systolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 98,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ],
+              "text": "Diastolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 55,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/vp-25-bp",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "vp-25-bp",
+        "meta": {
+          "versionId": "192570",
+          "lastUpdated": "2016-03-09T15:35:33.079+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2008-04-01: Blood pressure 103/54 mmHg</div>"
+        },
+        "extension": [
+          {
+            "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "33586001",
+                  "display": "sitting"
+                }
+              ],
+              "text": "sitting"
+            }
+          }
+        ],
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood pressure systolic and diastolic"
+            }
+          ],
+          "text": "Blood pressure systolic and diastolic"
+        },
+        "subject": {
+          "reference": "Patient/99912345"
+        },
+        "encounter": {
+          "reference": "Encounter/vp-25"
+        },
+        "effectiveDateTime": "2008-04-01",
+        "bodySite": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "368209003",
+              "display": "right arm"
+            }
+          ],
+          "text": "right arm"
+        },
+        "method": {
+          "coding": [
+            {
+              "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#",
+              "code": "machine",
+              "display": "machine"
+            }
+          ],
+          "text": "machine"
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ],
+              "text": "Systolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 103,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ],
+              "text": "Diastolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 54,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/vp-26-bp",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "vp-26-bp",
+        "meta": {
+          "versionId": "192610",
+          "lastUpdated": "2016-03-09T15:35:33.144+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2008-05-15: Blood pressure 101/58 mmHg</div>"
+        },
+        "extension": [
+          {
+            "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "33586001",
+                  "display": "sitting"
+                }
+              ],
+              "text": "sitting"
+            }
+          }
+        ],
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood pressure systolic and diastolic"
+            }
+          ],
+          "text": "Blood pressure systolic and diastolic"
+        },
+        "subject": {
+          "reference": "Patient/99912345"
+        },
+        "encounter": {
+          "reference": "Encounter/vp-26"
+        },
+        "effectiveDateTime": "2008-05-15",
+        "bodySite": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "368209003",
+              "display": "right arm"
+            }
+          ],
+          "text": "right arm"
+        },
+        "method": {
+          "coding": [
+            {
+              "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#",
+              "code": "auscultation",
+              "display": "auscultation"
+            }
+          ],
+          "text": "auscultation"
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ],
+              "text": "Systolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 101,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ],
+              "text": "Diastolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 58,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/vp-27-bp",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "vp-27-bp",
+        "meta": {
+          "versionId": "192650",
+          "lastUpdated": "2016-03-09T15:35:33.203+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2008-05-16: Blood pressure 102/54 mmHg</div>"
+        },
+        "extension": [
+          {
+            "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "33586001",
+                  "display": "sitting"
+                }
+              ],
+              "text": "sitting"
+            }
+          }
+        ],
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood pressure systolic and diastolic"
+            }
+          ],
+          "text": "Blood pressure systolic and diastolic"
+        },
+        "subject": {
+          "reference": "Patient/99912345"
+        },
+        "encounter": {
+          "reference": "Encounter/vp-27"
+        },
+        "effectiveDateTime": "2008-05-16",
+        "bodySite": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "368209003",
+              "display": "right arm"
+            }
+          ],
+          "text": "right arm"
+        },
+        "method": {
+          "coding": [
+            {
+              "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#",
+              "code": "auscultation",
+              "display": "auscultation"
+            }
+          ],
+          "text": "auscultation"
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ],
+              "text": "Systolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 102,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ],
+              "text": "Diastolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 54,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/vp-28-bp",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "vp-28-bp",
+        "meta": {
+          "versionId": "192690",
+          "lastUpdated": "2016-03-09T15:35:33.254+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2008-06-09: Blood pressure 102/57 mmHg</div>"
+        },
+        "extension": [
+          {
+            "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "33586001",
+                  "display": "sitting"
+                }
+              ],
+              "text": "sitting"
+            }
+          }
+        ],
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood pressure systolic and diastolic"
+            }
+          ],
+          "text": "Blood pressure systolic and diastolic"
+        },
+        "subject": {
+          "reference": "Patient/99912345"
+        },
+        "encounter": {
+          "reference": "Encounter/vp-28"
+        },
+        "effectiveDateTime": "2008-06-09",
+        "bodySite": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "368209003",
+              "display": "right arm"
+            }
+          ],
+          "text": "right arm"
+        },
+        "method": {
+          "coding": [
+            {
+              "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#",
+              "code": "auscultation",
+              "display": "auscultation"
+            }
+          ],
+          "text": "auscultation"
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ],
+              "text": "Systolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 102,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ],
+              "text": "Diastolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 57,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/vp-29-bp",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "vp-29-bp",
+        "meta": {
+          "versionId": "192730",
+          "lastUpdated": "2016-03-09T15:35:33.302+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2008-09-06: Blood pressure 102/62 mmHg</div>"
+        },
+        "extension": [
+          {
+            "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "33586001",
+                  "display": "sitting"
+                }
+              ],
+              "text": "sitting"
+            }
+          }
+        ],
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood pressure systolic and diastolic"
+            }
+          ],
+          "text": "Blood pressure systolic and diastolic"
+        },
+        "subject": {
+          "reference": "Patient/99912345"
+        },
+        "encounter": {
+          "reference": "Encounter/vp-29"
+        },
+        "effectiveDateTime": "2008-09-06",
+        "bodySite": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "61396006",
+              "display": "left thigh"
+            }
+          ],
+          "text": "left thigh"
+        },
+        "method": {
+          "coding": [
+            {
+              "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#",
+              "code": "machine",
+              "display": "machine"
+            }
+          ],
+          "text": "machine"
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ],
+              "text": "Systolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 102,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ],
+              "text": "Diastolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 62,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/vp-30-bp",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "vp-30-bp",
+        "meta": {
+          "versionId": "192770",
+          "lastUpdated": "2016-03-09T15:35:33.348+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2008-09-07: Blood pressure 103/60 mmHg</div>"
+        },
+        "extension": [
+          {
+            "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "33586001",
+                  "display": "sitting"
+                }
+              ],
+              "text": "sitting"
+            }
+          }
+        ],
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood pressure systolic and diastolic"
+            }
+          ],
+          "text": "Blood pressure systolic and diastolic"
+        },
+        "subject": {
+          "reference": "Patient/99912345"
+        },
+        "encounter": {
+          "reference": "Encounter/vp-30"
+        },
+        "effectiveDateTime": "2008-09-07",
+        "bodySite": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "61396006",
+              "display": "left thigh"
+            }
+          ],
+          "text": "left thigh"
+        },
+        "method": {
+          "coding": [
+            {
+              "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#",
+              "code": "auscultation",
+              "display": "auscultation"
+            }
+          ],
+          "text": "auscultation"
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ],
+              "text": "Systolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 103,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ],
+              "text": "Diastolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 60,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/vp-31-bp",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "vp-31-bp",
+        "meta": {
+          "versionId": "192810",
+          "lastUpdated": "2016-03-09T15:35:33.395+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2008-10-16: Blood pressure 103/62 mmHg</div>"
+        },
+        "extension": [
+          {
+            "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "33586001",
+                  "display": "sitting"
+                }
+              ],
+              "text": "sitting"
+            }
+          }
+        ],
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood pressure systolic and diastolic"
+            }
+          ],
+          "text": "Blood pressure systolic and diastolic"
+        },
+        "subject": {
+          "reference": "Patient/99912345"
+        },
+        "encounter": {
+          "reference": "Encounter/vp-31"
+        },
+        "effectiveDateTime": "2008-10-16",
+        "bodySite": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "61396006",
+              "display": "left thigh"
+            }
+          ],
+          "text": "left thigh"
+        },
+        "method": {
+          "coding": [
+            {
+              "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#",
+              "code": "machine",
+              "display": "machine"
+            }
+          ],
+          "text": "machine"
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ],
+              "text": "Systolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 103,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ],
+              "text": "Diastolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 62,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/vp-33-bp",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "vp-33-bp",
+        "meta": {
+          "versionId": "192850",
+          "lastUpdated": "2016-03-09T15:35:33.444+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2008-12-16: Blood pressure 104/61 mmHg</div>"
+        },
+        "extension": [
+          {
+            "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "33586001",
+                  "display": "sitting"
+                }
+              ],
+              "text": "sitting"
+            }
+          }
+        ],
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood pressure systolic and diastolic"
+            }
+          ],
+          "text": "Blood pressure systolic and diastolic"
+        },
+        "subject": {
+          "reference": "Patient/99912345"
+        },
+        "encounter": {
+          "reference": "Encounter/vp-33"
+        },
+        "effectiveDateTime": "2008-12-16",
+        "bodySite": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "368209003",
+              "display": "right arm"
+            }
+          ],
+          "text": "right arm"
+        },
+        "method": {
+          "coding": [
+            {
+              "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#",
+              "code": "machine",
+              "display": "machine"
+            }
+          ],
+          "text": "machine"
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ],
+              "text": "Systolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 104,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ],
+              "text": "Diastolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 61,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/vp-34-bp",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "vp-34-bp",
+        "meta": {
+          "versionId": "192890",
+          "lastUpdated": "2016-03-09T15:35:33.492+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2009-01-09: Blood pressure 105/63 mmHg</div>"
+        },
+        "extension": [
+          {
+            "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "33586001",
+                  "display": "sitting"
+                }
+              ],
+              "text": "sitting"
+            }
+          }
+        ],
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood pressure systolic and diastolic"
+            }
+          ],
+          "text": "Blood pressure systolic and diastolic"
+        },
+        "subject": {
+          "reference": "Patient/99912345"
+        },
+        "encounter": {
+          "reference": "Encounter/vp-34"
+        },
+        "effectiveDateTime": "2009-01-09",
+        "bodySite": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "368209003",
+              "display": "right arm"
+            }
+          ],
+          "text": "right arm"
+        },
+        "method": {
+          "coding": [
+            {
+              "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#",
+              "code": "machine",
+              "display": "machine"
+            }
+          ],
+          "text": "machine"
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ],
+              "text": "Systolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 105,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ],
+              "text": "Diastolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 63,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/vp-35-bp",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "vp-35-bp",
+        "meta": {
+          "versionId": "192930",
+          "lastUpdated": "2016-03-09T15:35:33.539+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2009-01-12: Blood pressure 105/62 mmHg</div>"
+        },
+        "extension": [
+          {
+            "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "33586001",
+                  "display": "sitting"
+                }
+              ],
+              "text": "sitting"
+            }
+          }
+        ],
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood pressure systolic and diastolic"
+            }
+          ],
+          "text": "Blood pressure systolic and diastolic"
+        },
+        "subject": {
+          "reference": "Patient/99912345"
+        },
+        "encounter": {
+          "reference": "Encounter/vp-35"
+        },
+        "effectiveDateTime": "2009-01-12",
+        "bodySite": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "61396006",
+              "display": "left thigh"
+            }
+          ],
+          "text": "left thigh"
+        },
+        "method": {
+          "coding": [
+            {
+              "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#",
+              "code": "auscultation",
+              "display": "auscultation"
+            }
+          ],
+          "text": "auscultation"
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ],
+              "text": "Systolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 105,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ],
+              "text": "Diastolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 62,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/vp-36-bp",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "vp-36-bp",
+        "meta": {
+          "versionId": "192970",
+          "lastUpdated": "2016-03-09T15:35:33.587+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2009-02-25: Blood pressure 104/64 mmHg</div>"
+        },
+        "extension": [
+          {
+            "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "33586001",
+                  "display": "sitting"
+                }
+              ],
+              "text": "sitting"
+            }
+          }
+        ],
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood pressure systolic and diastolic"
+            }
+          ],
+          "text": "Blood pressure systolic and diastolic"
+        },
+        "subject": {
+          "reference": "Patient/99912345"
+        },
+        "encounter": {
+          "reference": "Encounter/vp-36"
+        },
+        "effectiveDateTime": "2009-02-25",
+        "bodySite": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "368209003",
+              "display": "right arm"
+            }
+          ],
+          "text": "right arm"
+        },
+        "method": {
+          "coding": [
+            {
+              "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#",
+              "code": "auscultation",
+              "display": "auscultation"
+            }
+          ],
+          "text": "auscultation"
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ],
+              "text": "Systolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 104,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ],
+              "text": "Diastolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 64,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/vp-37-bp",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "vp-37-bp",
+        "meta": {
+          "versionId": "193010",
+          "lastUpdated": "2016-03-09T15:35:33.635+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2009-03-16: Blood pressure 106/63 mmHg</div>"
+        },
+        "extension": [
+          {
+            "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "33586001",
+                  "display": "sitting"
+                }
+              ],
+              "text": "sitting"
+            }
+          }
+        ],
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood pressure systolic and diastolic"
+            }
+          ],
+          "text": "Blood pressure systolic and diastolic"
+        },
+        "subject": {
+          "reference": "Patient/99912345"
+        },
+        "encounter": {
+          "reference": "Encounter/vp-37"
+        },
+        "effectiveDateTime": "2009-03-16",
+        "bodySite": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "61396006",
+              "display": "left thigh"
+            }
+          ],
+          "text": "left thigh"
+        },
+        "method": {
+          "coding": [
+            {
+              "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#",
+              "code": "auscultation",
+              "display": "auscultation"
+            }
+          ],
+          "text": "auscultation"
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ],
+              "text": "Systolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 106,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ],
+              "text": "Diastolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 63,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/vp-38-bp",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "vp-38-bp",
+        "meta": {
+          "versionId": "193050",
+          "lastUpdated": "2016-03-09T15:35:33.683+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2009-05-29: Blood pressure 105/64 mmHg</div>"
+        },
+        "extension": [
+          {
+            "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "33586001",
+                  "display": "sitting"
+                }
+              ],
+              "text": "sitting"
+            }
+          }
+        ],
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood pressure systolic and diastolic"
+            }
+          ],
+          "text": "Blood pressure systolic and diastolic"
+        },
+        "subject": {
+          "reference": "Patient/99912345"
+        },
+        "encounter": {
+          "reference": "Encounter/vp-38"
+        },
+        "effectiveDateTime": "2009-05-29",
+        "bodySite": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "368209003",
+              "display": "right arm"
+            }
+          ],
+          "text": "right arm"
+        },
+        "method": {
+          "coding": [
+            {
+              "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#",
+              "code": "auscultation",
+              "display": "auscultation"
+            }
+          ],
+          "text": "auscultation"
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ],
+              "text": "Systolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 105,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ],
+              "text": "Diastolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 64,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/vp-39-bp",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "vp-39-bp",
+        "meta": {
+          "versionId": "193090",
+          "lastUpdated": "2016-03-09T15:35:33.730+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2009-06-26: Blood pressure 105/64 mmHg</div>"
+        },
+        "extension": [
+          {
+            "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "33586001",
+                  "display": "sitting"
+                }
+              ],
+              "text": "sitting"
+            }
+          }
+        ],
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood pressure systolic and diastolic"
+            }
+          ],
+          "text": "Blood pressure systolic and diastolic"
+        },
+        "subject": {
+          "reference": "Patient/99912345"
+        },
+        "encounter": {
+          "reference": "Encounter/vp-39"
+        },
+        "effectiveDateTime": "2009-06-26",
+        "bodySite": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "61396006",
+              "display": "left thigh"
+            }
+          ],
+          "text": "left thigh"
+        },
+        "method": {
+          "coding": [
+            {
+              "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#",
+              "code": "auscultation",
+              "display": "auscultation"
+            }
+          ],
+          "text": "auscultation"
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ],
+              "text": "Systolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 105,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ],
+              "text": "Diastolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 64,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/vp-40-bp",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "vp-40-bp",
+        "meta": {
+          "versionId": "193130",
+          "lastUpdated": "2016-03-09T15:35:33.776+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2009-08-01: Blood pressure 108/67 mmHg</div>"
+        },
+        "extension": [
+          {
+            "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "33586001",
+                  "display": "sitting"
+                }
+              ],
+              "text": "sitting"
+            }
+          }
+        ],
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood pressure systolic and diastolic"
+            }
+          ],
+          "text": "Blood pressure systolic and diastolic"
+        },
+        "subject": {
+          "reference": "Patient/99912345"
+        },
+        "encounter": {
+          "reference": "Encounter/vp-40"
+        },
+        "effectiveDateTime": "2009-08-01",
+        "bodySite": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "368209003",
+              "display": "right arm"
+            }
+          ],
+          "text": "right arm"
+        },
+        "method": {
+          "coding": [
+            {
+              "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#",
+              "code": "auscultation",
+              "display": "auscultation"
+            }
+          ],
+          "text": "auscultation"
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ],
+              "text": "Systolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 108,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ],
+              "text": "Diastolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 67,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/vp-41-bp",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "vp-41-bp",
+        "meta": {
+          "versionId": "193170",
+          "lastUpdated": "2016-03-09T15:35:33.824+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2010-03-12: Blood pressure 112/71 mmHg</div>"
+        },
+        "extension": [
+          {
+            "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "33586001",
+                  "display": "sitting"
+                }
+              ],
+              "text": "sitting"
+            }
+          }
+        ],
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood pressure systolic and diastolic"
+            }
+          ],
+          "text": "Blood pressure systolic and diastolic"
+        },
+        "subject": {
+          "reference": "Patient/99912345"
+        },
+        "encounter": {
+          "reference": "Encounter/vp-41"
+        },
+        "effectiveDateTime": "2010-03-12",
+        "bodySite": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "368209003",
+              "display": "right arm"
+            }
+          ],
+          "text": "right arm"
+        },
+        "method": {
+          "coding": [
+            {
+              "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#",
+              "code": "machine",
+              "display": "machine"
+            }
+          ],
+          "text": "machine"
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ],
+              "text": "Systolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 112,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ],
+              "text": "Diastolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 71,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/vp-42-bp",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "vp-42-bp",
+        "meta": {
+          "versionId": "193210",
+          "lastUpdated": "2016-03-09T15:35:33.870+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2010-03-17: Blood pressure 112/73 mmHg</div>"
+        },
+        "extension": [
+          {
+            "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "33586001",
+                  "display": "sitting"
+                }
+              ],
+              "text": "sitting"
+            }
+          }
+        ],
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood pressure systolic and diastolic"
+            }
+          ],
+          "text": "Blood pressure systolic and diastolic"
+        },
+        "subject": {
+          "reference": "Patient/99912345"
+        },
+        "encounter": {
+          "reference": "Encounter/vp-42"
+        },
+        "effectiveDateTime": "2010-03-17",
+        "bodySite": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "368209003",
+              "display": "right arm"
+            }
+          ],
+          "text": "right arm"
+        },
+        "method": {
+          "coding": [
+            {
+              "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#",
+              "code": "machine",
+              "display": "machine"
+            }
+          ],
+          "text": "machine"
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ],
+              "text": "Systolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 112,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ],
+              "text": "Diastolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 73,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/vp-44-bp",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "vp-44-bp",
+        "meta": {
+          "versionId": "193250",
+          "lastUpdated": "2016-03-09T15:35:33.917+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2010-07-25: Blood pressure 111/70 mmHg</div>"
+        },
+        "extension": [
+          {
+            "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "33586001",
+                  "display": "sitting"
+                }
+              ],
+              "text": "sitting"
+            }
+          }
+        ],
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood pressure systolic and diastolic"
+            }
+          ],
+          "text": "Blood pressure systolic and diastolic"
+        },
+        "subject": {
+          "reference": "Patient/99912345"
+        },
+        "encounter": {
+          "reference": "Encounter/vp-44"
+        },
+        "effectiveDateTime": "2010-07-25",
+        "bodySite": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "61396006",
+              "display": "left thigh"
+            }
+          ],
+          "text": "left thigh"
+        },
+        "method": {
+          "coding": [
+            {
+              "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#",
+              "code": "auscultation",
+              "display": "auscultation"
+            }
+          ],
+          "text": "auscultation"
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ],
+              "text": "Systolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 111,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ],
+              "text": "Diastolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 70,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/vp-45-bp",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "vp-45-bp",
+        "meta": {
+          "versionId": "193290",
+          "lastUpdated": "2016-03-09T15:35:33.964+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2010-10-13: Blood pressure 110/68 mmHg</div>"
+        },
+        "extension": [
+          {
+            "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "33586001",
+                  "display": "sitting"
+                }
+              ],
+              "text": "sitting"
+            }
+          }
+        ],
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood pressure systolic and diastolic"
+            }
+          ],
+          "text": "Blood pressure systolic and diastolic"
+        },
+        "subject": {
+          "reference": "Patient/99912345"
+        },
+        "encounter": {
+          "reference": "Encounter/vp-45"
+        },
+        "effectiveDateTime": "2010-10-13",
+        "bodySite": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "61396006",
+              "display": "left thigh"
+            }
+          ],
+          "text": "left thigh"
+        },
+        "method": {
+          "coding": [
+            {
+              "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#",
+              "code": "auscultation",
+              "display": "auscultation"
+            }
+          ],
+          "text": "auscultation"
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ],
+              "text": "Systolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 110,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ],
+              "text": "Diastolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 68,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/vp-46-bp",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "vp-46-bp",
+        "meta": {
+          "versionId": "193330",
+          "lastUpdated": "2016-03-09T15:35:34.010+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2011-01-17: Blood pressure 106/65 mmHg</div>"
+        },
+        "extension": [
+          {
+            "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "33586001",
+                  "display": "sitting"
+                }
+              ],
+              "text": "sitting"
+            }
+          }
+        ],
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood pressure systolic and diastolic"
+            }
+          ],
+          "text": "Blood pressure systolic and diastolic"
+        },
+        "subject": {
+          "reference": "Patient/99912345"
+        },
+        "encounter": {
+          "reference": "Encounter/vp-46"
+        },
+        "effectiveDateTime": "2011-01-17",
+        "bodySite": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "368209003",
+              "display": "right arm"
+            }
+          ],
+          "text": "right arm"
+        },
+        "method": {
+          "coding": [
+            {
+              "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#",
+              "code": "machine",
+              "display": "machine"
+            }
+          ],
+          "text": "machine"
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ],
+              "text": "Systolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 106,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ],
+              "text": "Diastolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 65,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/vp-48-bp",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "vp-48-bp",
+        "meta": {
+          "versionId": "193370",
+          "lastUpdated": "2016-03-09T15:35:34.057+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2011-02-07: Blood pressure 104/64 mmHg</div>"
+        },
+        "extension": [
+          {
+            "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "33586001",
+                  "display": "sitting"
+                }
+              ],
+              "text": "sitting"
+            }
+          }
+        ],
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood pressure systolic and diastolic"
+            }
+          ],
+          "text": "Blood pressure systolic and diastolic"
+        },
+        "subject": {
+          "reference": "Patient/99912345"
+        },
+        "encounter": {
+          "reference": "Encounter/vp-48"
+        },
+        "effectiveDateTime": "2011-02-07",
+        "bodySite": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "61396006",
+              "display": "left thigh"
+            }
+          ],
+          "text": "left thigh"
+        },
+        "method": {
+          "coding": [
+            {
+              "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#",
+              "code": "auscultation",
+              "display": "auscultation"
+            }
+          ],
+          "text": "auscultation"
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ],
+              "text": "Systolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 104,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ],
+              "text": "Diastolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 64,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/vp-49-bp",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "vp-49-bp",
+        "meta": {
+          "versionId": "193410",
+          "lastUpdated": "2016-03-09T15:35:34.106+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2011-03-06: Blood pressure 104/62 mmHg</div>"
+        },
+        "extension": [
+          {
+            "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "33586001",
+                  "display": "sitting"
+                }
+              ],
+              "text": "sitting"
+            }
+          }
+        ],
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood pressure systolic and diastolic"
+            }
+          ],
+          "text": "Blood pressure systolic and diastolic"
+        },
+        "subject": {
+          "reference": "Patient/99912345"
+        },
+        "encounter": {
+          "reference": "Encounter/vp-49"
+        },
+        "effectiveDateTime": "2011-03-06",
+        "bodySite": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "368209003",
+              "display": "right arm"
+            }
+          ],
+          "text": "right arm"
+        },
+        "method": {
+          "coding": [
+            {
+              "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#",
+              "code": "auscultation",
+              "display": "auscultation"
+            }
+          ],
+          "text": "auscultation"
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ],
+              "text": "Systolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 104,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ],
+              "text": "Diastolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 62,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/vp-50-bp",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "vp-50-bp",
+        "meta": {
+          "versionId": "193450",
+          "lastUpdated": "2016-03-09T15:35:34.181+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2011-03-21: Blood pressure 104/62 mmHg</div>"
+        },
+        "extension": [
+          {
+            "url": "http://fhir-registry.smarthealthit.org/StructureDefinition/vital-signs#position",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "33586001",
+                  "display": "sitting"
+                }
+              ],
+              "text": "sitting"
+            }
+          }
+        ],
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood pressure systolic and diastolic"
+            }
+          ],
+          "text": "Blood pressure systolic and diastolic"
+        },
+        "subject": {
+          "reference": "Patient/99912345"
+        },
+        "encounter": {
+          "reference": "Encounter/vp-50"
+        },
+        "effectiveDateTime": "2011-03-21",
+        "bodySite": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "368209003",
+              "display": "right arm"
+            }
+          ],
+          "text": "right arm"
+        },
+        "method": {
+          "coding": [
+            {
+              "system": "http://smarthealthit.org/terms/codes/BloodPressureMethod#",
+              "code": "auscultation",
+              "display": "auscultation"
+            }
+          ],
+          "text": "auscultation"
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ],
+              "text": "Systolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 104,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ],
+              "text": "Diastolic blood pressure"
+            },
+            "valueQuantity": {
+              "value": 62,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/1036-height",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "1036-height",
+        "meta": {
+          "versionId": "193490",
+          "lastUpdated": "2016-03-09T15:35:34.228+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2010-08-12: height = 119.0 cm</div>"
         },
         "status": "final",
         "category": {
@@ -1660,14 +4689,14 @@
           "text": "height"
         },
         "subject": {
-          "reference": "Patient/9995679"
+          "reference": "Patient/99912345"
         },
         "encounter": {
-          "reference": "Encounter/1"
+          "reference": "Encounter/1036"
         },
-        "effectiveDateTime": "2006-12-27",
+        "effectiveDateTime": "2010-08-12",
         "valueQuantity": {
-          "value": 198.0,
+          "value": 119.0,
           "unit": "cm",
           "system": "http://unitsofmeasure.org",
           "code": "cm"
@@ -1678,17 +4707,17 @@
       }
     },
     {
-      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/2-height",
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/vp-1-height",
       "resource": {
         "resourceType": "Observation",
-        "id": "2-height",
+        "id": "vp-1-height",
         "meta": {
-          "versionId": "194631",
-          "lastUpdated": "2016-03-09T15:35:39.474+00:00"
+          "versionId": "193594",
+          "lastUpdated": "2016-03-09T15:35:34.349+00:00"
         },
         "text": {
           "status": "generated",
-          "div": "<div>2007-04-18: height = 197.5 cm</div>"
+          "div": "<div>2006-04-09: height = 88.1 cm</div>"
         },
         "status": "final",
         "category": {
@@ -1712,14 +4741,222 @@
           "text": "height"
         },
         "subject": {
-          "reference": "Patient/9995679"
+          "reference": "Patient/99912345"
         },
         "encounter": {
-          "reference": "Encounter/2"
+          "reference": "Encounter/vp-1"
+        },
+        "effectiveDateTime": "2006-04-09",
+        "valueQuantity": {
+          "value": 88.1,
+          "unit": "cm",
+          "system": "http://unitsofmeasure.org",
+          "code": "cm"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/vp-5-height",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "vp-5-height",
+        "meta": {
+          "versionId": "193607",
+          "lastUpdated": "2016-03-09T15:35:34.364+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2006-07-18: height = 90.2 cm</div>"
+        },
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2",
+              "display": "height"
+            }
+          ],
+          "text": "height"
+        },
+        "subject": {
+          "reference": "Patient/99912345"
+        },
+        "encounter": {
+          "reference": "Encounter/vp-5"
+        },
+        "effectiveDateTime": "2006-07-18",
+        "valueQuantity": {
+          "value": 90.2,
+          "unit": "cm",
+          "system": "http://unitsofmeasure.org",
+          "code": "cm"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/vp-12-height",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "vp-12-height",
+        "meta": {
+          "versionId": "193620",
+          "lastUpdated": "2016-03-09T15:35:34.379+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2007-01-22: height = 96.8 cm</div>"
+        },
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2",
+              "display": "height"
+            }
+          ],
+          "text": "height"
+        },
+        "subject": {
+          "reference": "Patient/99912345"
+        },
+        "encounter": {
+          "reference": "Encounter/vp-12"
+        },
+        "effectiveDateTime": "2007-01-22",
+        "valueQuantity": {
+          "value": 96.8,
+          "unit": "cm",
+          "system": "http://unitsofmeasure.org",
+          "code": "cm"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/vp-13-height",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "vp-13-height",
+        "meta": {
+          "versionId": "193633",
+          "lastUpdated": "2016-03-09T15:35:34.394+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2007-03-16: height = 97.6 cm</div>"
+        },
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2",
+              "display": "height"
+            }
+          ],
+          "text": "height"
+        },
+        "subject": {
+          "reference": "Patient/99912345"
+        },
+        "encounter": {
+          "reference": "Encounter/vp-13"
+        },
+        "effectiveDateTime": "2007-03-16",
+        "valueQuantity": {
+          "value": 97.6,
+          "unit": "cm",
+          "system": "http://unitsofmeasure.org",
+          "code": "cm"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/vp-14-height",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "vp-14-height",
+        "meta": {
+          "versionId": "193646",
+          "lastUpdated": "2016-03-09T15:35:34.414+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2007-04-18: height = 98.2 cm</div>"
+        },
+        "status": "final",
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/observation-category",
+              "code": "vital-signs",
+              "display": "Vital Signs"
+            }
+          ],
+          "text": "Vital Signs"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2",
+              "display": "height"
+            }
+          ],
+          "text": "height"
+        },
+        "subject": {
+          "reference": "Patient/99912345"
+        },
+        "encounter": {
+          "reference": "Encounter/vp-14"
         },
         "effectiveDateTime": "2007-04-18",
         "valueQuantity": {
-          "value": 197.5,
+          "value": 98.2,
           "unit": "cm",
           "system": "http://unitsofmeasure.org",
           "code": "cm"
@@ -1730,17 +4967,17 @@
       }
     },
     {
-      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/3-height",
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/vp-16-height",
       "resource": {
         "resourceType": "Observation",
-        "id": "3-height",
+        "id": "vp-16-height",
         "meta": {
-          "versionId": "194670",
-          "lastUpdated": "2016-03-09T15:35:39.519+00:00"
+          "versionId": "193659",
+          "lastUpdated": "2016-03-09T15:35:34.429+00:00"
         },
         "text": {
           "status": "generated",
-          "div": "<div>2007-07-18: height = 197.0 cm</div>"
+          "div": "<div>2007-08-29: height = 100.9 cm</div>"
         },
         "status": "final",
         "category": {
@@ -1764,14 +5001,14 @@
           "text": "height"
         },
         "subject": {
-          "reference": "Patient/9995679"
+          "reference": "Patient/99912345"
         },
         "encounter": {
-          "reference": "Encounter/3"
+          "reference": "Encounter/vp-16"
         },
-        "effectiveDateTime": "2007-07-18",
+        "effectiveDateTime": "2007-08-29",
         "valueQuantity": {
-          "value": 197.0,
+          "value": 100.9,
           "unit": "cm",
           "system": "http://unitsofmeasure.org",
           "code": "cm"
@@ -1782,17 +5019,17 @@
       }
     },
     {
-      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/4-height",
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/vp-18-height",
       "resource": {
         "resourceType": "Observation",
-        "id": "4-height",
+        "id": "vp-18-height",
         "meta": {
-          "versionId": "194709",
-          "lastUpdated": "2016-03-09T15:35:39.563+00:00"
+          "versionId": "193672",
+          "lastUpdated": "2016-03-09T15:35:34.444+00:00"
         },
         "text": {
           "status": "generated",
-          "div": "<div>2008-01-16: height = 197.5 cm</div>"
+          "div": "<div>2007-09-20: height = 101.4 cm</div>"
         },
         "status": "final",
         "category": {
@@ -1816,14 +5053,14 @@
           "text": "height"
         },
         "subject": {
-          "reference": "Patient/9995679"
+          "reference": "Patient/99912345"
         },
         "encounter": {
-          "reference": "Encounter/4"
+          "reference": "Encounter/vp-18"
         },
-        "effectiveDateTime": "2008-01-16",
+        "effectiveDateTime": "2007-09-20",
         "valueQuantity": {
-          "value": 197.5,
+          "value": 101.4,
           "unit": "cm",
           "system": "http://unitsofmeasure.org",
           "code": "cm"
@@ -1834,17 +5071,17 @@
       }
     },
     {
-      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/5-height",
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/vp-23-height",
       "resource": {
         "resourceType": "Observation",
-        "id": "5-height",
+        "id": "vp-23-height",
         "meta": {
-          "versionId": "194748",
-          "lastUpdated": "2016-03-09T15:35:39.609+00:00"
+          "versionId": "193685",
+          "lastUpdated": "2016-03-09T15:35:34.459+00:00"
         },
         "text": {
           "status": "generated",
-          "div": "<div>2008-06-25: height = 197.5 cm</div>"
+          "div": "<div>2008-02-24: height = 105.0 cm</div>"
         },
         "status": "final",
         "category": {
@@ -1868,14 +5105,14 @@
           "text": "height"
         },
         "subject": {
-          "reference": "Patient/9995679"
+          "reference": "Patient/99912345"
         },
         "encounter": {
-          "reference": "Encounter/5"
+          "reference": "Encounter/vp-23"
         },
-        "effectiveDateTime": "2008-06-25",
+        "effectiveDateTime": "2008-02-24",
         "valueQuantity": {
-          "value": 197.5,
+          "value": 105.0,
           "unit": "cm",
           "system": "http://unitsofmeasure.org",
           "code": "cm"
@@ -1886,17 +5123,17 @@
       }
     },
     {
-      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/7-height",
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/vp-32-height",
       "resource": {
         "resourceType": "Observation",
-        "id": "7-height",
+        "id": "vp-32-height",
         "meta": {
-          "versionId": "194800",
-          "lastUpdated": "2016-03-09T15:35:39.670+00:00"
+          "versionId": "193698",
+          "lastUpdated": "2016-03-09T15:35:34.474+00:00"
         },
         "text": {
           "status": "generated",
-          "div": "<div>2009-06-10: height = 198.0 cm</div>"
+          "div": "<div>2008-11-07: height = 110.4 cm</div>"
         },
         "status": "final",
         "category": {
@@ -1920,14 +5157,14 @@
           "text": "height"
         },
         "subject": {
-          "reference": "Patient/9995679"
+          "reference": "Patient/99912345"
         },
         "encounter": {
-          "reference": "Encounter/7"
+          "reference": "Encounter/vp-32"
         },
-        "effectiveDateTime": "2009-06-10",
+        "effectiveDateTime": "2008-11-07",
         "valueQuantity": {
-          "value": 198.0,
+          "value": 110.4,
           "unit": "cm",
           "system": "http://unitsofmeasure.org",
           "code": "cm"
@@ -1938,17 +5175,17 @@
       }
     },
     {
-      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/9-height",
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/vp-43-height",
       "resource": {
         "resourceType": "Observation",
-        "id": "9-height",
+        "id": "vp-43-height",
         "meta": {
-          "versionId": "194826",
-          "lastUpdated": "2016-03-09T15:35:39.702+00:00"
+          "versionId": "193711",
+          "lastUpdated": "2016-03-09T15:35:34.489+00:00"
         },
         "text": {
           "status": "generated",
-          "div": "<div>2009-12-23: height = 197.5 cm</div>"
+          "div": "<div>2010-06-21: height = 121.6 cm</div>"
         },
         "status": "final",
         "category": {
@@ -1972,66 +5209,14 @@
           "text": "height"
         },
         "subject": {
-          "reference": "Patient/9995679"
+          "reference": "Patient/99912345"
         },
         "encounter": {
-          "reference": "Encounter/9"
+          "reference": "Encounter/vp-43"
         },
-        "effectiveDateTime": "2009-12-23",
+        "effectiveDateTime": "2010-06-21",
         "valueQuantity": {
-          "value": 197.5,
-          "unit": "cm",
-          "system": "http://unitsofmeasure.org",
-          "code": "cm"
-        }
-      },
-      "search": {
-        "mode": "match"
-      }
-    },
-    {
-      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Observation/15-height",
-      "resource": {
-        "resourceType": "Observation",
-        "id": "15-height",
-        "meta": {
-          "versionId": "194930",
-          "lastUpdated": "2016-03-09T15:35:39.822+00:00"
-        },
-        "text": {
-          "status": "generated",
-          "div": "<div>2010-12-22: height = 197.0 cm</div>"
-        },
-        "status": "final",
-        "category": {
-          "coding": [
-            {
-              "system": "http://hl7.org/fhir/observation-category",
-              "code": "vital-signs",
-              "display": "Vital Signs"
-            }
-          ],
-          "text": "Vital Signs"
-        },
-        "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "8302-2",
-              "display": "height"
-            }
-          ],
-          "text": "height"
-        },
-        "subject": {
-          "reference": "Patient/9995679"
-        },
-        "encounter": {
-          "reference": "Encounter/15"
-        },
-        "effectiveDateTime": "2010-12-22",
-        "valueQuantity": {
-          "value": 197.0,
+          "value": 121.6,
           "unit": "cm",
           "system": "http://unitsofmeasure.org",
           "code": "cm"

@@ -1,35 +1,35 @@
 {
   "resourceType": "Bundle",
   "type": "searchset",
-  "total": 8,
+  "total": 50,
   "link": [
     {
       "relation": "self",
-      "url": "https://stub-dstu2.smarthealthit.org/api/fhir/Encounter?patient=9995679&patient=9995679"
+      "url": "https://stub-dstu2.smarthealthit.org/api/fhir/Encounter?patient=99912345&patient=99912345"
     }
   ],
   "entry": [
     {
-      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Encounter/1",
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Encounter/1036",
       "resource": {
         "resourceType": "Encounter",
-        "id": "1",
+        "id": "1036",
         "meta": {
-          "versionId": "193984",
-          "lastUpdated": "2016-03-09T15:35:38.647+00:00"
+          "versionId": "191630",
+          "lastUpdated": "2016-03-09T15:35:31.874+00:00"
         },
         "text": {
           "status": "generated",
-          "div": "<div>2006-12-27T15:53:00: ambulatory encounter</div>"
+          "div": "<div>2010-08-12T04:00:00Z: ambulatory encounter</div>"
         },
         "status": "finished",
         "class": "ambulatory",
         "patient": {
-          "reference": "Patient/9995679"
+          "reference": "Patient/99912345"
         },
         "period": {
-          "start": "2006-12-27T15:53:00",
-          "end": "2006-12-28T04:59:59"
+          "start": "2010-08-12T04:00:00Z",
+          "end": "2010-08-12T04:20:00Z"
         }
       },
       "search": {
@@ -37,26 +37,26 @@
       }
     },
     {
-      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Encounter/2",
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Encounter/vp-1",
       "resource": {
         "resourceType": "Encounter",
-        "id": "2",
+        "id": "vp-1",
         "meta": {
-          "versionId": "193990",
-          "lastUpdated": "2016-03-09T15:35:38.656+00:00"
+          "versionId": "191636",
+          "lastUpdated": "2016-03-09T15:35:31.884+00:00"
         },
         "text": {
           "status": "generated",
-          "div": "<div>2007-04-18T13:32:00: ambulatory encounter</div>"
+          "div": "<div>2006-04-09T00:00:00: ambulatory encounter</div>"
         },
         "status": "finished",
         "class": "ambulatory",
         "patient": {
-          "reference": "Patient/9995679"
+          "reference": "Patient/99912345"
         },
         "period": {
-          "start": "2007-04-18T13:32:00",
-          "end": "2007-04-19T04:59:59"
+          "start": "2006-04-09T00:00:00",
+          "end": "2006-04-09T00:00:00"
         }
       },
       "search": {
@@ -64,26 +64,26 @@
       }
     },
     {
-      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Encounter/3",
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Encounter/vp-2",
       "resource": {
         "resourceType": "Encounter",
-        "id": "3",
+        "id": "vp-2",
         "meta": {
-          "versionId": "193996",
-          "lastUpdated": "2016-03-09T15:35:38.665+00:00"
+          "versionId": "191642",
+          "lastUpdated": "2016-03-09T15:35:31.893+00:00"
         },
         "text": {
           "status": "generated",
-          "div": "<div>2007-07-18T12:49:00: ambulatory encounter</div>"
+          "div": "<div>2006-04-14T00:00:00: ambulatory encounter</div>"
         },
         "status": "finished",
         "class": "ambulatory",
         "patient": {
-          "reference": "Patient/9995679"
+          "reference": "Patient/99912345"
         },
         "period": {
-          "start": "2007-07-18T12:49:00",
-          "end": "2007-07-19T04:59:59"
+          "start": "2006-04-14T00:00:00",
+          "end": "2006-04-14T00:00:00"
         }
       },
       "search": {
@@ -91,26 +91,26 @@
       }
     },
     {
-      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Encounter/4",
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Encounter/vp-3",
       "resource": {
         "resourceType": "Encounter",
-        "id": "4",
+        "id": "vp-3",
         "meta": {
-          "versionId": "194002",
-          "lastUpdated": "2016-03-09T15:35:38.674+00:00"
+          "versionId": "191648",
+          "lastUpdated": "2016-03-09T15:35:31.902+00:00"
         },
         "text": {
           "status": "generated",
-          "div": "<div>2008-01-16T13:03:00: ambulatory encounter</div>"
+          "div": "<div>2006-06-11T00:00:00: ambulatory encounter</div>"
         },
         "status": "finished",
         "class": "ambulatory",
         "patient": {
-          "reference": "Patient/9995679"
+          "reference": "Patient/99912345"
         },
         "period": {
-          "start": "2008-01-16T13:03:00",
-          "end": "2008-01-17T04:59:59"
+          "start": "2006-06-11T00:00:00",
+          "end": "2006-06-11T00:00:00"
         }
       },
       "search": {
@@ -118,26 +118,26 @@
       }
     },
     {
-      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Encounter/5",
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Encounter/vp-4",
       "resource": {
         "resourceType": "Encounter",
-        "id": "5",
+        "id": "vp-4",
         "meta": {
-          "versionId": "194008",
-          "lastUpdated": "2016-03-09T15:35:38.683+00:00"
+          "versionId": "191654",
+          "lastUpdated": "2016-03-09T15:35:31.911+00:00"
         },
         "text": {
           "status": "generated",
-          "div": "<div>2008-06-25T15:45:00: ambulatory encounter</div>"
+          "div": "<div>2006-07-11T00:00:00: ambulatory encounter</div>"
         },
         "status": "finished",
         "class": "ambulatory",
         "patient": {
-          "reference": "Patient/9995679"
+          "reference": "Patient/99912345"
         },
         "period": {
-          "start": "2008-06-25T15:45:00",
-          "end": "2008-06-26T04:59:59"
+          "start": "2006-07-11T00:00:00",
+          "end": "2006-07-11T00:00:00"
         }
       },
       "search": {
@@ -145,26 +145,26 @@
       }
     },
     {
-      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Encounter/7",
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Encounter/vp-5",
       "resource": {
         "resourceType": "Encounter",
-        "id": "7",
+        "id": "vp-5",
         "meta": {
-          "versionId": "194014",
-          "lastUpdated": "2016-03-09T15:35:38.692+00:00"
+          "versionId": "191660",
+          "lastUpdated": "2016-03-09T15:35:31.920+00:00"
         },
         "text": {
           "status": "generated",
-          "div": "<div>2009-06-10T12:39:00: ambulatory encounter</div>"
+          "div": "<div>2006-07-18T00:00:00: inpatient encounter</div>"
         },
         "status": "finished",
-        "class": "ambulatory",
+        "class": "inpatient",
         "patient": {
-          "reference": "Patient/9995679"
+          "reference": "Patient/99912345"
         },
         "period": {
-          "start": "2009-06-10T12:39:00",
-          "end": "2009-06-11T04:59:59"
+          "start": "2006-07-18T00:00:00",
+          "end": "2006-07-18T00:00:00"
         }
       },
       "search": {
@@ -172,26 +172,26 @@
       }
     },
     {
-      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Encounter/9",
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Encounter/vp-6",
       "resource": {
         "resourceType": "Encounter",
-        "id": "9",
+        "id": "vp-6",
         "meta": {
-          "versionId": "194020",
-          "lastUpdated": "2016-03-09T15:35:38.702+00:00"
+          "versionId": "191666",
+          "lastUpdated": "2016-03-09T15:35:31.929+00:00"
         },
         "text": {
           "status": "generated",
-          "div": "<div>2009-12-23T12:54:00: ambulatory encounter</div>"
+          "div": "<div>2006-08-06T00:00:00: ambulatory encounter</div>"
         },
         "status": "finished",
         "class": "ambulatory",
         "patient": {
-          "reference": "Patient/9995679"
+          "reference": "Patient/99912345"
         },
         "period": {
-          "start": "2009-12-23T12:54:00",
-          "end": "2009-12-24T04:59:59"
+          "start": "2006-08-06T00:00:00",
+          "end": "2006-08-06T00:00:00"
         }
       },
       "search": {
@@ -199,26 +199,1160 @@
       }
     },
     {
-      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Encounter/15",
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Encounter/vp-7",
       "resource": {
         "resourceType": "Encounter",
-        "id": "15",
+        "id": "vp-7",
         "meta": {
-          "versionId": "194026",
-          "lastUpdated": "2016-03-09T15:35:38.712+00:00"
+          "versionId": "191672",
+          "lastUpdated": "2016-03-09T15:35:31.937+00:00"
         },
         "text": {
           "status": "generated",
-          "div": "<div>2010-12-22T17:23:00: ambulatory encounter</div>"
+          "div": "<div>2006-08-14T00:00:00: ambulatory encounter</div>"
         },
         "status": "finished",
         "class": "ambulatory",
         "patient": {
-          "reference": "Patient/9995679"
+          "reference": "Patient/99912345"
         },
         "period": {
-          "start": "2010-12-22T17:23:00",
-          "end": "2010-12-23T04:59:59"
+          "start": "2006-08-14T00:00:00",
+          "end": "2006-08-14T00:00:00"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Encounter/vp-8",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "vp-8",
+        "meta": {
+          "versionId": "191678",
+          "lastUpdated": "2016-03-09T15:35:31.946+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2006-09-14T00:00:00: inpatient encounter</div>"
+        },
+        "status": "finished",
+        "class": "inpatient",
+        "patient": {
+          "reference": "Patient/99912345"
+        },
+        "period": {
+          "start": "2006-09-14T00:00:00",
+          "end": "2006-09-14T00:00:00"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Encounter/vp-9",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "vp-9",
+        "meta": {
+          "versionId": "191684",
+          "lastUpdated": "2016-03-09T15:35:31.955+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2006-10-28T00:00:00: inpatient encounter</div>"
+        },
+        "status": "finished",
+        "class": "inpatient",
+        "patient": {
+          "reference": "Patient/99912345"
+        },
+        "period": {
+          "start": "2006-10-28T00:00:00",
+          "end": "2006-10-28T00:00:00"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Encounter/vp-10",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "vp-10",
+        "meta": {
+          "versionId": "191690",
+          "lastUpdated": "2016-03-09T15:35:31.963+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2006-11-14T00:00:00: ambulatory encounter</div>"
+        },
+        "status": "finished",
+        "class": "ambulatory",
+        "patient": {
+          "reference": "Patient/99912345"
+        },
+        "period": {
+          "start": "2006-11-14T00:00:00",
+          "end": "2006-11-14T00:00:00"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Encounter/vp-11",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "vp-11",
+        "meta": {
+          "versionId": "191696",
+          "lastUpdated": "2016-03-09T15:35:31.972+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2006-11-19T00:00:00: ambulatory encounter</div>"
+        },
+        "status": "finished",
+        "class": "ambulatory",
+        "patient": {
+          "reference": "Patient/99912345"
+        },
+        "period": {
+          "start": "2006-11-19T00:00:00",
+          "end": "2006-11-19T00:00:00"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Encounter/vp-12",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "vp-12",
+        "meta": {
+          "versionId": "191702",
+          "lastUpdated": "2016-03-09T15:35:31.980+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2007-01-22T00:00:00: inpatient encounter</div>"
+        },
+        "status": "finished",
+        "class": "inpatient",
+        "patient": {
+          "reference": "Patient/99912345"
+        },
+        "period": {
+          "start": "2007-01-22T00:00:00",
+          "end": "2007-01-22T00:00:00"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Encounter/vp-13",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "vp-13",
+        "meta": {
+          "versionId": "191708",
+          "lastUpdated": "2016-03-09T15:35:31.989+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2007-03-16T00:00:00: ambulatory encounter</div>"
+        },
+        "status": "finished",
+        "class": "ambulatory",
+        "patient": {
+          "reference": "Patient/99912345"
+        },
+        "period": {
+          "start": "2007-03-16T00:00:00",
+          "end": "2007-03-16T00:00:00"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Encounter/vp-14",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "vp-14",
+        "meta": {
+          "versionId": "191714",
+          "lastUpdated": "2016-03-09T15:35:31.997+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2007-04-18T00:00:00: ambulatory encounter</div>"
+        },
+        "status": "finished",
+        "class": "ambulatory",
+        "patient": {
+          "reference": "Patient/99912345"
+        },
+        "period": {
+          "start": "2007-04-18T00:00:00",
+          "end": "2007-04-18T00:00:00"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Encounter/vp-15",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "vp-15",
+        "meta": {
+          "versionId": "191720",
+          "lastUpdated": "2016-03-09T15:35:32.006+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2007-08-19T00:00:00: inpatient encounter</div>"
+        },
+        "status": "finished",
+        "class": "inpatient",
+        "patient": {
+          "reference": "Patient/99912345"
+        },
+        "period": {
+          "start": "2007-08-19T00:00:00",
+          "end": "2007-08-19T00:00:00"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Encounter/vp-16",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "vp-16",
+        "meta": {
+          "versionId": "191726",
+          "lastUpdated": "2016-03-09T15:35:32.014+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2007-08-29T00:00:00: ambulatory encounter</div>"
+        },
+        "status": "finished",
+        "class": "ambulatory",
+        "patient": {
+          "reference": "Patient/99912345"
+        },
+        "period": {
+          "start": "2007-08-29T00:00:00",
+          "end": "2007-08-29T00:00:00"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Encounter/vp-17",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "vp-17",
+        "meta": {
+          "versionId": "191732",
+          "lastUpdated": "2016-03-09T15:35:32.023+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2007-09-06T00:00:00: ambulatory encounter</div>"
+        },
+        "status": "finished",
+        "class": "ambulatory",
+        "patient": {
+          "reference": "Patient/99912345"
+        },
+        "period": {
+          "start": "2007-09-06T00:00:00",
+          "end": "2007-09-06T00:00:00"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Encounter/vp-18",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "vp-18",
+        "meta": {
+          "versionId": "191738",
+          "lastUpdated": "2016-03-09T15:35:32.031+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2007-09-20T00:00:00: ambulatory encounter</div>"
+        },
+        "status": "finished",
+        "class": "ambulatory",
+        "patient": {
+          "reference": "Patient/99912345"
+        },
+        "period": {
+          "start": "2007-09-20T00:00:00",
+          "end": "2007-09-20T00:00:00"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Encounter/vp-19",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "vp-19",
+        "meta": {
+          "versionId": "191744",
+          "lastUpdated": "2016-03-09T15:35:32.045+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2007-10-02T00:00:00: ambulatory encounter</div>"
+        },
+        "status": "finished",
+        "class": "ambulatory",
+        "patient": {
+          "reference": "Patient/99912345"
+        },
+        "period": {
+          "start": "2007-10-02T00:00:00",
+          "end": "2007-10-02T00:00:00"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Encounter/vp-21",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "vp-21",
+        "meta": {
+          "versionId": "191750",
+          "lastUpdated": "2016-03-09T15:35:32.058+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2007-11-15T00:00:00: ambulatory encounter</div>"
+        },
+        "status": "finished",
+        "class": "ambulatory",
+        "patient": {
+          "reference": "Patient/99912345"
+        },
+        "period": {
+          "start": "2007-11-15T00:00:00",
+          "end": "2007-11-15T00:00:00"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Encounter/vp-22",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "vp-22",
+        "meta": {
+          "versionId": "191756",
+          "lastUpdated": "2016-03-09T15:35:32.067+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2008-02-22T00:00:00: ambulatory encounter</div>"
+        },
+        "status": "finished",
+        "class": "ambulatory",
+        "patient": {
+          "reference": "Patient/99912345"
+        },
+        "period": {
+          "start": "2008-02-22T00:00:00",
+          "end": "2008-02-22T00:00:00"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Encounter/vp-23",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "vp-23",
+        "meta": {
+          "versionId": "191762",
+          "lastUpdated": "2016-03-09T15:35:32.075+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2008-02-24T00:00:00: ambulatory encounter</div>"
+        },
+        "status": "finished",
+        "class": "ambulatory",
+        "patient": {
+          "reference": "Patient/99912345"
+        },
+        "period": {
+          "start": "2008-02-24T00:00:00",
+          "end": "2008-02-24T00:00:00"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Encounter/vp-24",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "vp-24",
+        "meta": {
+          "versionId": "191768",
+          "lastUpdated": "2016-03-09T15:35:32.084+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2008-03-10T00:00:00: ambulatory encounter</div>"
+        },
+        "status": "finished",
+        "class": "ambulatory",
+        "patient": {
+          "reference": "Patient/99912345"
+        },
+        "period": {
+          "start": "2008-03-10T00:00:00",
+          "end": "2008-03-10T00:00:00"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Encounter/vp-25",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "vp-25",
+        "meta": {
+          "versionId": "191774",
+          "lastUpdated": "2016-03-09T15:35:32.092+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2008-04-01T00:00:00: ambulatory encounter</div>"
+        },
+        "status": "finished",
+        "class": "ambulatory",
+        "patient": {
+          "reference": "Patient/99912345"
+        },
+        "period": {
+          "start": "2008-04-01T00:00:00",
+          "end": "2008-04-01T00:00:00"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Encounter/vp-26",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "vp-26",
+        "meta": {
+          "versionId": "191780",
+          "lastUpdated": "2016-03-09T15:35:32.100+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2008-05-15T00:00:00: ambulatory encounter</div>"
+        },
+        "status": "finished",
+        "class": "ambulatory",
+        "patient": {
+          "reference": "Patient/99912345"
+        },
+        "period": {
+          "start": "2008-05-15T00:00:00",
+          "end": "2008-05-15T00:00:00"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Encounter/vp-27",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "vp-27",
+        "meta": {
+          "versionId": "191786",
+          "lastUpdated": "2016-03-09T15:35:32.108+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2008-05-16T00:00:00: ambulatory encounter</div>"
+        },
+        "status": "finished",
+        "class": "ambulatory",
+        "patient": {
+          "reference": "Patient/99912345"
+        },
+        "period": {
+          "start": "2008-05-16T00:00:00",
+          "end": "2008-05-16T00:00:00"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Encounter/vp-28",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "vp-28",
+        "meta": {
+          "versionId": "191792",
+          "lastUpdated": "2016-03-09T15:35:32.117+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2008-06-09T00:00:00: ambulatory encounter</div>"
+        },
+        "status": "finished",
+        "class": "ambulatory",
+        "patient": {
+          "reference": "Patient/99912345"
+        },
+        "period": {
+          "start": "2008-06-09T00:00:00",
+          "end": "2008-06-09T00:00:00"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Encounter/vp-29",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "vp-29",
+        "meta": {
+          "versionId": "191798",
+          "lastUpdated": "2016-03-09T15:35:32.125+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2008-09-06T00:00:00: ambulatory encounter</div>"
+        },
+        "status": "finished",
+        "class": "ambulatory",
+        "patient": {
+          "reference": "Patient/99912345"
+        },
+        "period": {
+          "start": "2008-09-06T00:00:00",
+          "end": "2008-09-06T00:00:00"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Encounter/vp-30",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "vp-30",
+        "meta": {
+          "versionId": "191804",
+          "lastUpdated": "2016-03-09T15:35:32.137+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2008-09-07T00:00:00: inpatient encounter</div>"
+        },
+        "status": "finished",
+        "class": "inpatient",
+        "patient": {
+          "reference": "Patient/99912345"
+        },
+        "period": {
+          "start": "2008-09-07T00:00:00",
+          "end": "2008-09-07T00:00:00"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Encounter/vp-31",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "vp-31",
+        "meta": {
+          "versionId": "191810",
+          "lastUpdated": "2016-03-09T15:35:32.146+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2008-10-16T00:00:00: ambulatory encounter</div>"
+        },
+        "status": "finished",
+        "class": "ambulatory",
+        "patient": {
+          "reference": "Patient/99912345"
+        },
+        "period": {
+          "start": "2008-10-16T00:00:00",
+          "end": "2008-10-16T00:00:00"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Encounter/vp-32",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "vp-32",
+        "meta": {
+          "versionId": "191816",
+          "lastUpdated": "2016-03-09T15:35:32.154+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2008-11-07T00:00:00: inpatient encounter</div>"
+        },
+        "status": "finished",
+        "class": "inpatient",
+        "patient": {
+          "reference": "Patient/99912345"
+        },
+        "period": {
+          "start": "2008-11-07T00:00:00",
+          "end": "2008-11-07T00:00:00"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Encounter/vp-33",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "vp-33",
+        "meta": {
+          "versionId": "191822",
+          "lastUpdated": "2016-03-09T15:35:32.163+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2008-12-16T00:00:00: ambulatory encounter</div>"
+        },
+        "status": "finished",
+        "class": "ambulatory",
+        "patient": {
+          "reference": "Patient/99912345"
+        },
+        "period": {
+          "start": "2008-12-16T00:00:00",
+          "end": "2008-12-16T00:00:00"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Encounter/vp-34",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "vp-34",
+        "meta": {
+          "versionId": "191828",
+          "lastUpdated": "2016-03-09T15:35:32.171+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2009-01-09T00:00:00: inpatient encounter</div>"
+        },
+        "status": "finished",
+        "class": "inpatient",
+        "patient": {
+          "reference": "Patient/99912345"
+        },
+        "period": {
+          "start": "2009-01-09T00:00:00",
+          "end": "2009-01-09T00:00:00"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Encounter/vp-35",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "vp-35",
+        "meta": {
+          "versionId": "191834",
+          "lastUpdated": "2016-03-09T15:35:32.180+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2009-01-12T00:00:00: ambulatory encounter</div>"
+        },
+        "status": "finished",
+        "class": "ambulatory",
+        "patient": {
+          "reference": "Patient/99912345"
+        },
+        "period": {
+          "start": "2009-01-12T00:00:00",
+          "end": "2009-01-12T00:00:00"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Encounter/vp-36",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "vp-36",
+        "meta": {
+          "versionId": "191840",
+          "lastUpdated": "2016-03-09T15:35:32.188+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2009-02-25T00:00:00: ambulatory encounter</div>"
+        },
+        "status": "finished",
+        "class": "ambulatory",
+        "patient": {
+          "reference": "Patient/99912345"
+        },
+        "period": {
+          "start": "2009-02-25T00:00:00",
+          "end": "2009-02-25T00:00:00"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Encounter/vp-37",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "vp-37",
+        "meta": {
+          "versionId": "191846",
+          "lastUpdated": "2016-03-09T15:35:32.197+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2009-03-16T00:00:00: inpatient encounter</div>"
+        },
+        "status": "finished",
+        "class": "inpatient",
+        "patient": {
+          "reference": "Patient/99912345"
+        },
+        "period": {
+          "start": "2009-03-16T00:00:00",
+          "end": "2009-03-16T00:00:00"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Encounter/vp-38",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "vp-38",
+        "meta": {
+          "versionId": "191852",
+          "lastUpdated": "2016-03-09T15:35:32.205+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2009-05-29T00:00:00: inpatient encounter</div>"
+        },
+        "status": "finished",
+        "class": "inpatient",
+        "patient": {
+          "reference": "Patient/99912345"
+        },
+        "period": {
+          "start": "2009-05-29T00:00:00",
+          "end": "2009-05-29T00:00:00"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Encounter/vp-39",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "vp-39",
+        "meta": {
+          "versionId": "191858",
+          "lastUpdated": "2016-03-09T15:35:32.213+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2009-06-26T00:00:00: ambulatory encounter</div>"
+        },
+        "status": "finished",
+        "class": "ambulatory",
+        "patient": {
+          "reference": "Patient/99912345"
+        },
+        "period": {
+          "start": "2009-06-26T00:00:00",
+          "end": "2009-06-26T00:00:00"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Encounter/vp-40",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "vp-40",
+        "meta": {
+          "versionId": "191864",
+          "lastUpdated": "2016-03-09T15:35:32.221+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2009-08-01T00:00:00: ambulatory encounter</div>"
+        },
+        "status": "finished",
+        "class": "ambulatory",
+        "patient": {
+          "reference": "Patient/99912345"
+        },
+        "period": {
+          "start": "2009-08-01T00:00:00",
+          "end": "2009-08-01T00:00:00"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Encounter/vp-41",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "vp-41",
+        "meta": {
+          "versionId": "191870",
+          "lastUpdated": "2016-03-09T15:35:32.230+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2010-03-12T00:00:00: ambulatory encounter</div>"
+        },
+        "status": "finished",
+        "class": "ambulatory",
+        "patient": {
+          "reference": "Patient/99912345"
+        },
+        "period": {
+          "start": "2010-03-12T00:00:00",
+          "end": "2010-03-12T00:00:00"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Encounter/vp-42",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "vp-42",
+        "meta": {
+          "versionId": "191876",
+          "lastUpdated": "2016-03-09T15:35:32.238+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2010-03-17T00:00:00: ambulatory encounter</div>"
+        },
+        "status": "finished",
+        "class": "ambulatory",
+        "patient": {
+          "reference": "Patient/99912345"
+        },
+        "period": {
+          "start": "2010-03-17T00:00:00",
+          "end": "2010-03-17T00:00:00"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Encounter/vp-43",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "vp-43",
+        "meta": {
+          "versionId": "191882",
+          "lastUpdated": "2016-03-09T15:35:32.246+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2010-06-21T00:00:00: ambulatory encounter</div>"
+        },
+        "status": "finished",
+        "class": "ambulatory",
+        "patient": {
+          "reference": "Patient/99912345"
+        },
+        "period": {
+          "start": "2010-06-21T00:00:00",
+          "end": "2010-06-21T00:00:00"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Encounter/vp-44",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "vp-44",
+        "meta": {
+          "versionId": "191888",
+          "lastUpdated": "2016-03-09T15:35:32.255+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2010-07-25T00:00:00: ambulatory encounter</div>"
+        },
+        "status": "finished",
+        "class": "ambulatory",
+        "patient": {
+          "reference": "Patient/99912345"
+        },
+        "period": {
+          "start": "2010-07-25T00:00:00",
+          "end": "2010-07-25T00:00:00"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Encounter/vp-45",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "vp-45",
+        "meta": {
+          "versionId": "191894",
+          "lastUpdated": "2016-03-09T15:35:32.263+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2010-10-13T00:00:00: ambulatory encounter</div>"
+        },
+        "status": "finished",
+        "class": "ambulatory",
+        "patient": {
+          "reference": "Patient/99912345"
+        },
+        "period": {
+          "start": "2010-10-13T00:00:00",
+          "end": "2010-10-13T00:00:00"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Encounter/vp-46",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "vp-46",
+        "meta": {
+          "versionId": "191900",
+          "lastUpdated": "2016-03-09T15:35:32.272+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2011-01-17T00:00:00: ambulatory encounter</div>"
+        },
+        "status": "finished",
+        "class": "ambulatory",
+        "patient": {
+          "reference": "Patient/99912345"
+        },
+        "period": {
+          "start": "2011-01-17T00:00:00",
+          "end": "2011-01-17T00:00:00"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Encounter/vp-47",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "vp-47",
+        "meta": {
+          "versionId": "191906",
+          "lastUpdated": "2016-03-09T15:35:32.280+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2011-02-05T00:00:00: ambulatory encounter</div>"
+        },
+        "status": "finished",
+        "class": "ambulatory",
+        "patient": {
+          "reference": "Patient/99912345"
+        },
+        "period": {
+          "start": "2011-02-05T00:00:00",
+          "end": "2011-02-05T00:00:00"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Encounter/vp-48",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "vp-48",
+        "meta": {
+          "versionId": "191912",
+          "lastUpdated": "2016-03-09T15:35:32.288+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2011-02-07T00:00:00: inpatient encounter</div>"
+        },
+        "status": "finished",
+        "class": "inpatient",
+        "patient": {
+          "reference": "Patient/99912345"
+        },
+        "period": {
+          "start": "2011-02-07T00:00:00",
+          "end": "2011-02-07T00:00:00"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Encounter/vp-49",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "vp-49",
+        "meta": {
+          "versionId": "191918",
+          "lastUpdated": "2016-03-09T15:35:32.297+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2011-03-06T00:00:00: ambulatory encounter</div>"
+        },
+        "status": "finished",
+        "class": "ambulatory",
+        "patient": {
+          "reference": "Patient/99912345"
+        },
+        "period": {
+          "start": "2011-03-06T00:00:00",
+          "end": "2011-03-06T00:00:00"
+        }
+      },
+      "search": {
+        "mode": "match"
+      }
+    },
+    {
+      "fullUrl": "https://stub-dstu2.smarthealthit.org/api/fhir/Encounter/vp-50",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "vp-50",
+        "meta": {
+          "versionId": "191924",
+          "lastUpdated": "2016-03-09T15:35:32.306+00:00"
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div>2011-03-21T00:00:00: ambulatory encounter</div>"
+        },
+        "status": "finished",
+        "class": "ambulatory",
+        "patient": {
+          "reference": "Patient/99912345"
+        },
+        "period": {
+          "start": "2011-03-21T00:00:00",
+          "end": "2011-03-21T00:00:00"
         }
       },
       "search": {
