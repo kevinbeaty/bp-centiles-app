@@ -61,7 +61,7 @@ input[type='number'] {border: 1px solid #555; width: 40px;}
 }
 
 #help-content {
-    width: 400px; 
+    width: 400px;
     height: 350px;
     padding: .4em;
     position: relative;
@@ -217,6 +217,15 @@ table.nicetable td {
     border-style: solid;
     border-color: #a9c6c9;
     background-color:#d4e3e5;
+}
+
+table.nicetable tr.current td {
+    background-color: lightgreen;
+    -webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
 }
 
 /* Additional styling to make the filter buttons take less space */
