@@ -37,7 +37,22 @@
     var dfd = $.Deferred();
     getAllEncounters().then(function(encounters){
       getAllObservations().then(function(observations){
-        dfd.resolve(processObservations(observations,encounters));
+        getCurrentObservation().then(function(currObs){
+          var newObs = {
+            "vital_date":"2011-04-01",
+            "systolic":+currObs.sv,
+            "diastolic":+currObs.bv,
+            "isCurrent":false,
+            "id":"vp-2-bp",
+            "bodyPositionCode":"http://snomed.info/sct33586001",
+            "encounterTypeCode":"http://smarthealthit.org/terms/codes/EncounterType#ambulatory",
+            "bodySiteCode":"http://snomed.info/sct368209003",
+            "methodCode":"http://smarthealthit.org/terms/codes/BloodPressureMethod#machine"}
+          var pObs = processObservations(observations,encounters)
+          console.dir(pObs.bpData[0])
+          pObs.bpData.push(newObs)
+          dfd.resolve(pObs);
+        })
       })
     })
     /*
@@ -50,6 +65,15 @@
   }
 
   var useFixtures = false
+
+  function getCurrentObservation(){
+    return $.getJSON('http://10.120.40.43/getObservation')
+    /*
+    var dfd = $.Deferred();
+    dfd.resolve({sv: '109', bv: '58'})
+    return dfd.promise()
+    */
+  }
 
   function getAllObservations(){
     var dfd = $.Deferred();
