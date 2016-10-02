@@ -37,8 +37,7 @@ if (!BPC) {
     *
     * @param {Object} newPatient The new patient object
     */
-    BPC.initApp = function (patient, demo_mode) {
-
+    BPC.initApp = function (patient, demo_mode, skip_ui_init) {
         var i, age;
 
         if (BPC.settings.hide_patient_header) {
@@ -58,15 +57,16 @@ if (!BPC) {
             // Clear the error message
             $("#info").text("").hide();
 
-            // Initialize the UI
-            BPC.initUI ();
+            if (!skip_ui_init){
+                // Initialize the UI
+                BPC.initUI ();
 
-            // Initialize the filter buttons
-            BPC.initFilterButtons ();
+                // Initialize the filter buttons
+                BPC.initFilterButtons ();
 
-            // Draw the views
-
-            $("#tabs").show();
+                // Draw the views
+                $("#tabs").show();
+            }
 
             BPC.drawViews (patient,BPC.settings.zones);
 

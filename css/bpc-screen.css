@@ -153,16 +153,20 @@ input[type='number'] {border: 1px solid #555; width: 40px;}
 	min-height: 40px;
 }
 
-.print-button {
+.print-button, .refresh-button {
 	background: #666;
 	border : 1px solid #333;
 	padding: 0 13px 0 10px;
-	margin : 0px 15px;
+	margin : 0px 5px 0 12px;
 	border-radius: 6px;
 	cursor: pointer;
 	white-space: nowrap;
 	height: 24px;
 	vertical-align: top;
+}
+
+.refresh-button{
+    margin: 0;
 }
 
 .print-button:hover,

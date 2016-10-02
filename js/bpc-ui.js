@@ -20,9 +20,12 @@ if (!BPC) {
     * Document ready event handler (jQuery style)
     */
     $(document).ready(function() {
+        BPC.loadData(false);
+    });
+
+    BPC.loadData = function(skip_default_tab){
         //FHIR.oauth2.ready(function(smart){
         //window.smart = smart;
-
             if ( typeof FHIR === "undefined" ) {
                 $("#info").text("Error: SMART Connect interface not found");
             } else {
@@ -32,7 +35,7 @@ if (!BPC) {
                 // Fire up the SMART API calls and initialize the application asynchronously
                 $.when(BPC.get_demographics(), BPC.get_vitals())
                  .then( function (demographics, vitals) {
-                        BPC.initApp ( BPC.processData(demographics, vitals) );
+                        BPC.initApp ( BPC.processData(demographics, vitals), null, skip_default_tab);
                         BPC.vitals = vitals;
                         BPC.demographics = demographics;
                     },
@@ -47,7 +50,7 @@ if (!BPC) {
         //function () {
         //    BPC.initApp ( BPC.getSamplePatient(), true );
         //}); // end document.ready handler
-    });
+    }
 
     /**
     * Displays an error message on the screen
