@@ -35,10 +35,8 @@
 
   FhirLoader.vitals = function() {
     var dfd = $.Deferred();
-    getEncounters().then(function(encs){
-      var encounters = extractEntries(encs)
-      getObservations().then(function(obs){
-      var observations = extractEntries(obs)
+    getAllEncounters().then(function(encounters){
+      getAllObservations().then(function(observations){
         dfd.resolve(processObservations(observations,encounters));
       })
     })
@@ -50,6 +48,70 @@
     */
     return dfd.promise();
   }
+
+  var useFixtures = false
+
+  function getAllObservations(){
+    var dfd = $.Deferred();
+    if(useFixtures){
+      getObservations(0).then(function(obs1){
+        dfd.resolve(extractEntries(obs1))
+      })
+    } else {
+      getObservations(1).then(function(obs1){
+        obs1 = extractEntries(obs1)
+        getObservations(2).then(function(obs2){
+          obs2 = extractEntries(obs2)
+          dfd.resolve(obs1.concat(obs2))
+        })
+      })
+    }
+    return dfd.promise();
+  }
+
+  function getAllEncounters(){
+    var dfd = $.Deferred();
+    if(useFixtures){
+      getEncounters(0).then(function(obs1){
+        dfd.resolve(extractEntries(obs1))
+      })
+    } else {
+      getEncounters(1).then(function(obs1){
+        obs1 = extractEntries(obs1)
+        return getEncounters(2).then(function(obs2){
+          obs2 = extractEntries(obs2)
+          dfd.resolve(obs1.concat(obs2))
+        })
+      })
+    }
+    return dfd.promise()
+  }
+
+  function getObservations(idx){
+    idx = idx || 0
+    switch(idx){
+      case 0: return getFixtureJSON('observations')
+      case 1: return $.getJSON('https://stub-dstu2.smarthealthit.org/api/fhir/Observation?patient=99912345&code=8302-2%2c55284-4')
+      case 2: return $.getJSON('http:///fhirtest.uhn.ca/baseDstu2/Observation?patient=A99912345&code=8302-2%2c55284-4')
+    }
+    
+    // http://fhirtest.uhn.ca/baseDstu2/Observation?patient=A99912345
+        //return smart.patient.api.fetchAll({type: "Observation", query: {code: {$or: ['http://loinc.org|8302-2','http://loinc.org|55284-4']}}});
+        
+  };
+
+  function getEncounters(idx){
+    idx = idx || 0
+    switch(idx){
+      case 0: return getFixtureJSON('encounters')
+      case 1: return $.getJSON('https://stub-dstu2.smarthealthit.org/api/fhir/Encounter?patient=99912345')
+      case 2: return $.getJSON('http://fhirtest.uhn.ca/baseDstu2/Encounter?patient=A99912345')
+    }
+    // http://fhirtest.uhn.ca/baseDstu2/Observation?patient=A99912345
+    
+    //return $.getJSON('http://fhirtest.uhn.ca/baseDstu2/Encounter?patient=A99912345')
+    //  return defaultOnFail(smart.patient.api.fetchAll({type: "Encounter"}),[]);
+  };
 
 
   function cachedLink(items, target) {
@@ -129,14 +191,8 @@
       }
       vitals.bpData.push(obj);
     });
-
+    console.log(vitals)
     return vitals;
-  };
-
-function getObservations(){
-    return getFixtureJSON('observations')
-        //return smart.patient.api.fetchAll({type: "Observation", query: {code: {$or: ['http://loinc.org|8302-2','http://loinc.org|55284-4']}}});
-
   };
 
   function defaultOnFail(promise, defaultValue) {
@@ -162,11 +218,6 @@ function getObservations(){
     })
     return result
   }
-
-  function getEncounters(){
-    return getFixtureJSON('encounters')
-    //  return defaultOnFail(smart.patient.api.fetchAll({type: "Encounter"}),[]);
-  };
 
   var smart = window.smart || (window.smart = {})
 	smart.byCode = function byCode(observations, property){
