@@ -279,14 +279,23 @@ if (!BPC) {
     /*
     * Set selected observation as current
     */
-    BPC.setCurrent = function(id){
-
-        console.warn(id)
+    BPC.setCurrent = function(id, systolic, diastolic){
+        console.log(id)
+        console.log(systolic)
+        console.log(diastolic)
         window.localStorage.currentObservationId = id
         //document.location.reload()
         BPC.loadData(true)
 
-        /**
+
+        $.ajax({
+          url: 'http://10.120.40.43/addBPObservation',
+          type: 'POST',
+          data: {id: id,
+            sv: systolic, su: 'mmHg', sc: '8480-6', 
+            dv: diastolic, du: 'mmHg', dc: '8463-4'}
+        })
+        /*
         $.post( "ajax/test.html", function( data ) {
 
             // reload the data

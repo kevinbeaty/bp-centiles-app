@@ -403,7 +403,7 @@ CDC Clinical Growth Charts obtained 6 April 2011 (
                 <tr style="text-align: center;" class="{#if $T.isCurrent}current{#/if}">
                     <td>
                         <button style="display: {#if $T.isCurrent}none{#/if}"
-                                onClick="BPC.setCurrent('{$T.id}')">Set</button>
+                        onClick="BPC.setCurrent('{$T.id}','{$T.systolic}', '{$T.diastolic}')">Set</button>
                     </td>
                     <td>{$T.date}</td>
                     <td>{#if $T.height}{$T.height} cm{#else}-{#/if}</td>
