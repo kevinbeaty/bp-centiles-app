@@ -62,6 +62,7 @@ if (!BPC) {
             myHeight,
             getClosestHeight,
             isCurrent,
+            id,
             i;
 
         // Initialize the patient object
@@ -202,7 +203,8 @@ if (!BPC) {
                     position: BPC.getTermLabel (vitals_bp[i].bodyPositionCode),
                     method: BPC.getTermLabel (vitals_bp[i].methodCode),
                     encounter: BPC.getTermLabel (vitals_bp[i].encounterTypeCode),
-                    isCurrent: vitals_bp[i].isCurrent
+                    isCurrent: vitals_bp[i].isCurrent,
+                    id: vitals_bp[i].id
                     }
                 );
             }

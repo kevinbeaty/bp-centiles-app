@@ -276,4 +276,21 @@ if (!BPC) {
 
 	};
 
+    /*
+    * Set selected observation as current
+    */
+    BPC.setCurrent = function(id){
+
+        console.warn(id)
+
+        $.post( "ajax/test.html", function( data ) {
+
+            // reload the data
+            // load-fhir-data
+            // getAllObservations()
+
+            // reload ui without changing tab
+            // BPC.loadData(true)
+        });
+    }
 }());

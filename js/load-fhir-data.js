@@ -49,7 +49,7 @@
     return dfd.promise();
   }
 
-  var useFixtures = false
+  var useFixtures = true
 
   function getAllObservations(){
     var dfd = $.Deferred();
@@ -94,10 +94,10 @@
       case 1: return $.getJSON('https://stub-dstu2.smarthealthit.org/api/fhir/Observation?patient=99912345&code=8302-2%2c55284-4')
       case 2: return $.getJSON('http:///fhirtest.uhn.ca/baseDstu2/Observation?patient=A99912345&code=8302-2%2c55284-4')
     }
-    
+
     // http://fhirtest.uhn.ca/baseDstu2/Observation?patient=A99912345
         //return smart.patient.api.fetchAll({type: "Observation", query: {code: {$or: ['http://loinc.org|8302-2','http://loinc.org|55284-4']}}});
-        
+
   };
 
   function getEncounters(idx){
@@ -108,7 +108,7 @@
       case 2: return $.getJSON('http://fhirtest.uhn.ca/baseDstu2/Encounter?patient=A99912345')
     }
     // http://fhirtest.uhn.ca/baseDstu2/Observation?patient=A99912345
-    
+
     //return $.getJSON('http://fhirtest.uhn.ca/baseDstu2/Encounter?patient=A99912345')
     //  return defaultOnFail(smart.patient.api.fetchAll({type: "Encounter"}),[]);
   };
@@ -160,7 +160,8 @@
         vital_date: v.effectiveDateTime,
         systolic: systolic,
         diastolic: diastolic,
-        isCurrent: v.meta && v.meta.isCurrent
+        isCurrent: v.meta && v.meta.isCurrent,
+        id: v.id
       };
 
       if (extensions) {
@@ -191,7 +192,7 @@
       }
       vitals.bpData.push(obj);
     });
-    console.log(vitals)
+
     return vitals;
   };
 
