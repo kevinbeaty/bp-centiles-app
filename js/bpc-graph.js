@@ -370,6 +370,10 @@ if (!BPC) {
                 // Get the correct color hue for the dot
                 var colorhue = getDotColorhue (zones, percentile);
 
+                if (data.isCurrent){
+                    colorhue = .75;
+                }
+
                 // Draw the circle
                 var dot;
                 if (colorhue === s.colorhueDefault) {

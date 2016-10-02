@@ -20,8 +20,7 @@
         "id": "vp-2-bp",
         "meta": {
           "versionId": "191930",
-          "lastUpdated": "2016-03-09T15:35:32.315+00:00",
-          "isCurrent": true
+          "lastUpdated": "2016-03-09T15:35:32.315+00:00"
         },
         "text": {
           "status": "generated",
@@ -4305,7 +4304,8 @@
         "id": "vp-48-bp",
         "meta": {
           "versionId": "193370",
-          "lastUpdated": "2016-03-09T15:35:34.057+00:00"
+          "lastUpdated": "2016-03-09T15:35:34.057+00:00",
+          "isCurrent": true
         },
         "text": {
           "status": "generated",
