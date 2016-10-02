@@ -49,7 +49,7 @@
     return dfd.promise();
   }
 
-  var useFixtures = true
+  var useFixtures = false
 
   function getAllObservations(){
     var dfd = $.Deferred();
@@ -138,7 +138,8 @@
       });
     });
 
-    (vitalsByCode['55284-4']||[]).forEach(function(v){
+    var localStorageId = window.localStorage.currentObservationId
+    ;(vitalsByCode['55284-4']||[]).forEach(function(v){
 
       var components = v.component;
 
@@ -156,11 +157,12 @@
       var systolic = systolicObs.valueQuantity.value;
       var diastolic = diastolicObs.valueQuantity.value;
       var extensions = v.extension;
+
       var obj = {
         vital_date: v.effectiveDateTime,
         systolic: systolic,
         diastolic: diastolic,
-        isCurrent: v.meta && v.meta.isCurrent,
+        isCurrent: (v.id === localStorageId), //|| (v.meta && v.meta.isCurrent)),
         id: v.id
       };
 

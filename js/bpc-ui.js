@@ -282,7 +282,11 @@ if (!BPC) {
     BPC.setCurrent = function(id){
 
         console.warn(id)
+        window.localStorage.currentObservationId = id
+        //document.location.reload()
+        BPC.loadData(true)
 
+        /**
         $.post( "ajax/test.html", function( data ) {
 
             // reload the data
@@ -292,5 +296,6 @@ if (!BPC) {
             // reload ui without changing tab
             // BPC.loadData(true)
         });
+        */
     }
 }());
